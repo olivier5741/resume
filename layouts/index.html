@@ -1,0 +1,162 @@
+{{$r := .Site.Data.resume}}
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>{{$r.name}} - Resume</title> 
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="octicons/octicons.css">
+  <link rel="stylesheet" href="css/main.css">
+</head> 
+<body>
+<header>
+  <aside>
+    {{$p := $r.personal}}
+    <ul>
+      <li>{{$p.addr1}}</li>
+      <li>{{$p.addr2}}</li>
+      <li>{{$p.mobile}}</li>
+      <li>{{$p.mail}}</li>
+      <li>{{$p.add1}}</li>
+    </ul>
+  </aside>
+  <header>
+    <h1>{{$r.name}}</h1>
+    <h2>{{$r.job}}</h2>
+    <p>{{$r.exc}}</p>
+  </header>  
+</header>
+
+<article>
+  <header>
+    <h3>Work Experience</h3>
+  </header> 
+  <!-- this block is the same 3 times -->
+  <ul>
+    {{range $r.experiences}}
+    <li>
+      <div class="table-cell time">
+        <span class="date">{{.date}}</span>
+        <span class="duration">{{.dur}}</span>
+      </div>
+      <div class="table-cell">
+        <h4>{{.title}}</h4> 
+        <span class="sub">{{.sub}}</span>
+        <span class="org">{{.org}}</span>
+        <span class="place">{{.place}}</span>
+        <p>{{.exc}}</p>
+      </div>
+    </li>
+    {{end}}
+  </ul>
+  <hr/>
+  <ul>
+    {{range $r.volunteering}}
+    <li>
+      <div class="table-cell time">
+        <span class="date">{{.date}}</span>
+        <span class="duration">{{.dur}}</span>
+      </div>
+      <div class="table-cell">
+        <h4>{{.title}}</h4> 
+        <span class="org">{{.org}}</span>
+        <span class="place">{{.place}}</span>
+        <p>{{.exc}}</p>
+      </div>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+<article>
+  <header>
+    <h3>Education</h3>
+  </header> 
+  <ul>
+    {{range $r.educations}}
+    <li>
+      <div class="table-cell time">
+        <span class="date">{{.date}}</span>
+        <span class="duration">{{.dur}}</span>
+      </div>
+      <span class="table-cell">
+        <h4>{{.title}}</h4> 
+        <span class="org">{{.school}}</span>
+        <span class="place">{{.place}}</span>
+        <span class="add">{{.add}}</span>
+      </span>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+<article>
+  <header>
+    <h3>Languages</h3>
+  </header>
+  <ul class="column">
+    {{range $r.languages}}
+    <li class="column-cell">
+      <h4>{{.title}}</h4>
+      <span>{{.level}}</span>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+<article>
+  <header>
+    <h3>Skills</h3>
+  </header>
+  <ul class="skills">
+    {{range $r.skills}}
+    <li>
+      <h5>{{.category}}</h5>
+      {{ if .concept }}
+      <ul>
+        <span class="mega-octicon octicon-mortar-board"></span>
+        {{range .concept}}
+      	<li>
+      		{{.}},
+      	</li>
+      	{{end}}
+      </ul>
+      {{end}}
+      <ul>
+        <span class="mega-octicon octicon-code"></span>
+        {{range .lang}}
+      	<li>
+      		{{.}},
+      	</li>
+      	{{end}}
+      </ul>
+      <ul>
+        <span class="mega-octicon octicon-tools"></span>
+        {{range .tech}}
+      	<li>
+      		{{.}},
+      	</li>
+      	{{end}}
+      </ul>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+<article>
+  <header>
+    <h3>Interests</h3>
+  </header>
+  <ul class="column">
+    {{range $r.interests}}
+    <li class="column-cell">
+      <h5>{{.title}}</h5>
+      <span>{{.exc}}</span>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+</body> 
+</html>
+
