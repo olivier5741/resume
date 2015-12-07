@@ -18,6 +18,12 @@ body {
     }
 }
 
+@media print{
+    body {
+      font-size: 9.5px;
+    }
+}
+
 section, article {
   clear: both;
 }
