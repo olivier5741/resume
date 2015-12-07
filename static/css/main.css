@@ -20,7 +20,7 @@ body {
 
 @media print{
     body {
-      font-size: 9.5px;
+      font-size: 9.4px;
     }
 }
 
@@ -145,7 +145,7 @@ h5 {
 }
 
 hr {
-  border: 0.1em black dashed;
+  border: 1px black dashed;
   width: 95%;
 }
 
