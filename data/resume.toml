@@ -61,13 +61,13 @@ tech = ["AutoCAD (2D)", "Robotran", "ORCAD"]
 [[educations]]
 title = "Bachelor’s Degree in Business Computing"
 date = "2011-2013"
-school = "Haute Ecole de Namur-Liège-Luxembourg"
+org = "Haute Ecole de Namur-Liège-Luxembourg"
 place = "Namur"
 
 [[educations]]
 title = "B.S. in Engineering (Mechanics and electronics)"
 date ="2008-2011"
-school = "UCL"
+org = "UCL"
 place ="Louvain-la-Neuve"
 add = "graduated 1st year in 2009"
 

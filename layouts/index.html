@@ -35,17 +35,7 @@
   <ul>
     {{range $r.experiences}}
     <li>
-      <div class="table-cell time">
-        <span class="date">{{.date}}</span>
-        <span class="duration">{{.dur}}</span>
-      </div>
-      <div class="table-cell">
-        <h4>{{.title}}</h4> 
-        <span class="sub">{{.sub}}</span>
-        <span class="org">{{.org}}</span>
-        <span class="place">{{.place}}</span>
-        <p>{{.exc}}</p>
-      </div>
+      {{ partial "time-element.html" . }}
     </li>
     {{end}}
   </ul>
@@ -53,16 +43,7 @@
   <ul>
     {{range $r.volunteering}}
     <li>
-      <div class="table-cell time">
-        <span class="date">{{.date}}</span>
-        <span class="duration">{{.dur}}</span>
-      </div>
-      <div class="table-cell">
-        <h4>{{.title}}</h4> 
-        <span class="org">{{.org}}</span>
-        <span class="place">{{.place}}</span>
-        <p>{{.exc}}</p>
-      </div>
+      {{ partial "time-element.html" . }}
     </li>
     {{end}}
   </ul>
@@ -75,16 +56,7 @@
   <ul>
     {{range $r.educations}}
     <li>
-      <div class="table-cell time">
-        <span class="date">{{.date}}</span>
-        <span class="duration">{{.dur}}</span>
-      </div>
-      <span class="table-cell">
-        <h4>{{.title}}</h4> 
-        <span class="org">{{.school}}</span>
-        <span class="place">{{.place}}</span>
-        <span class="add">{{.add}}</span>
-      </span>
+      {{ partial "time-element.html" . }}
     </li>
     {{end}}
   </ul>
