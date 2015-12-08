@@ -32,6 +32,10 @@ h2, .italic {
   font-style: italic;
 }
 
+.small {
+  font-variant: small-caps;
+}
+
 h1 { 	
   font-size: 4em; 	
 }

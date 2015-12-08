@@ -4,9 +4,9 @@
 </div>
 <div class="table-cell">
   <h4>{{.title}}</h4> 
-  <span>{{.sub}}</span>
-  <span class="italic">{{.org}}</span>
-  <span>{{.place}}</span>
-  <span>{{.add}}</span>
+  {{if .sub}}<span class="small">{{.sub}}</span>,{{end}}
+  {{if .org}}<span class="italic">{{.org}}</span>,{{end}}
+  {{if .place}}<span>{{.place}}</span>,{{end}}
+  {{if .add}}<span>{{.add}}</span>,{{end}}
   <p>{{.exc}}</p>
 </div>
