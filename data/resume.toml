@@ -7,7 +7,7 @@ Eager to
 - engage with business experts
 - join an innovative team driven by agility and simplicity to craft some pragmatic code.
 '''
-# split into 2 sentences
+tags = ["golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
 
 [personal]
 addr1 = "Grand Rue, 40"
