@@ -46,7 +46,8 @@ exc = "Implementing tools easing the coordinator its work : personal data and la
 title = "Volunteer work in New Zealand"
 date = "Dec 14 - Dec 15"
 dur = "One year"
-#exc = "Personal jekyll blog on github pages (google photos and maps), updated from tablet."
+org = "WWOOF"
+exc = "Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
 
 [[skills]]
 category = "Self-Thaught"
@@ -91,12 +92,12 @@ level = "Mother Tongue"
 
 [[interests]]
 title = "Sports"
-exc =  "football, badminton, running."
+exc =  "football, badminton, running"
 
 [[interests]]
 title = "Culture"
-exc = "piano, travelling, wwoofing."
+exc = "piano, travelling, wwoofing"
 
 [[interests]]
 title = "Memberships"
-exc = "voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club."
+exc = "voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"

@@ -5,7 +5,7 @@
   <meta charset="utf-8"> 
   <title>{{$r.name}} - Resume</title> 
   <!-- find a way to put this inside the .toml -->
-  <meta name="description" content="{{$r.name}} resume. Eager to tackle a complex domain, engage with business experts and join an innovative team driven by agility and simplicity to craft some pragmatic code. Belgium, Namur">
+  <meta name="description" content="{{$r.name}} resume. Analyst / Developer. Eager to tackle a complex domain, engage with business experts and join an innovative team driven by agility and simplicity to craft some pragmatic code. Belgium, Namur">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <link rel="stylesheet" href="octicons/octicons.css">
   <link rel="stylesheet" href="css/main.css">
@@ -36,6 +36,7 @@
 
 <article>
   <header>
+    <hr/>
     <h3>Work Experience</h3>
   </header> 
   <!-- this block is the same 3 times -->
@@ -58,6 +59,7 @@
 
 <article>
   <header>
+    <hr/>
     <h3>Education</h3>
   </header> 
   <ul>
@@ -71,6 +73,7 @@
 
 <article>
   <header>
+    <hr/>
     <h3>Languages</h3>
   </header>
   <ul class="column">
@@ -85,6 +88,7 @@
 
 <article>
   <header>
+    <hr/>
     <h3>Skills</h3>
   </header>
   <ul class="skills">
@@ -92,8 +96,9 @@
     <li>
       <h5>{{.category}}</h5>
       {{ if .concept }}
-      <ul>
-        <span class="mega-octicon octicon-mortar-board"></span>
+      <div>
+      <span class="table-cell mega-octicon octicon-mortar-board"></span>
+      <ul class="table-cell">
         {{range .concept}}
       	<li>
       		{{.}},
@@ -101,22 +106,27 @@
       	{{end}}
       </ul>
       {{end}}
-      <ul>
-        <span class="mega-octicon octicon-code"></span>
+      </div>
+      <div>
+      <span class="table-cell mega-octicon octicon-code"></span>
+      <ul class="table-cell">
         {{range .lang}}
       	<li>
       		{{.}},
       	</li>
       	{{end}}
       </ul>
-      <ul>
-        <span class="mega-octicon octicon-tools"></span>
+      </div>
+      <div>
+      <span class="table-cell mega-octicon octicon-tools"></span>
+      <ul class="table-cell">
         {{range .tech}}
       	<li>
       		{{.}},
       	</li>
       	{{end}}
       </ul>
+      </div>
     </li>
     {{end}}
   </ul>
@@ -124,6 +134,7 @@
 
 <article>
   <header>
+    <hr/>
     <h3>Interests</h3>
   </header>
   <ul class="column">
