@@ -4,14 +4,6 @@ body {
   margin: auto;
 }
 
-.mega-octicon {
-  font-size: 1.8em;
-}
-
-.octicon-tools {
-  font-size: 1.5em;
-}
-
 @media only screen and (min-width: 800px) {
     body {
       margin-top: 2em;
@@ -24,100 +16,17 @@ body {
     }
 }
 
-section, article {
-  clear: both;
+.mega-octicon {
+  font-size: 1.8em;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0em;
-}
-
-header p {
-  font-weight: 500;
-  line-height: 1.7em;
+.octicon-tools {
   font-size: 1.5em;
 }
 
-article h4 {
-  display: inline;
-}
-
-article li {
-  margin: 1em 0em;
-}
-
-aside {
-  float: right;
-  text-align: right;
-  font-size: 1.2em;
-  margin-top: 0em;
-}
-
-aside span, ul.column span {
-  display: block;
-}
-
-li.column-cell {
-  margin-top: -0.5em;
-  margin-right: 4em;
-  float: left;
-}
-
-li.column-cell span {
-  font-size: 1.2em;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-
-.time {
-  font-size: 1.2em;
-  margin-top: 0.5em;
-  width: 8em;
-}
-
-.time span {
-  display: block;
-  line-height: 1.2em;
-}
-
-.duration {
-  font-weight: 600;
-}
-
-.table-cell {
-  display: table-cell;
-}
-
-.skills ul {
-  margin-top: 0.15em;
-}
-
-.skills ul li {
-  display: inline;
-}
-
-.skills > li {
-  display: inline-block;
-  margin-top: 0em;
-  margin-bottom: 0.5em;
-  vertical-align: top;
-  width: 230px;
-  padding-right: 1em;
-}
-
-h1, h2{
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-
-h3 {
-  margin: 0em;
-}
-
-article header {
- margin-bottom: 1em;
-}
+h1, h2, h3, h5, li.column-cell, .skills > li {
+	margin: 0em;
+}	
 
 h1 { 	
   font-size: 4em; 	
@@ -136,12 +45,14 @@ h3 {
 
 h4 { 	
   font-size: 2em; 	
-  line-height: 1em;
 }
 
-h5 {
+h5, li, p {
   font-size: 1em;
-  margin: 0em;
+}
+
+li, p, h4, .time span, header p, li.column-cell span {
+  line-height: 1.2em;
 }
 
 hr {
@@ -149,7 +60,62 @@ hr {
   width: 95%;
 }
 
-li, p { 
- 	font-size: 1em; 	
-  line-height: 1.2em;
+section, article {
+  clear: both;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0em;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+article h4, .skills ul li {
+  display: inline;
+}
+
+article li {
+  margin: 1em 0em;
+}
+
+aside, li.column-cell span {
+  font-size: 1.2em;
+}
+
+aside {
+  float: right;
+  text-align: right;
+}
+
+aside span, ul.column span, .time, .time span {
+  display: block;
+}
+
+li.column-cell {
+  margin-right: 4em;
+  margin-bottom: 0.5em;
+  float: left;
+}
+
+.time {
+  width: 8em;
+}
+
+.duration {
+  font-weight: 600;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.skills > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  padding-right: 1em;
+}
+
