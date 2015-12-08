@@ -1,6 +1,12 @@
 name = "Olivier Wouters"
 job = "Analyst/Developer"
-exc = "Eager to tackle a complex domain, engage with business experts and  join an innovative team driven by agility and simplicity to craft some pragmatic code."
+exc = '''
+Eager to 
+
+- tackle a complex domain
+- engage with business experts
+- join an innovative team driven by agility and simplicity to craft some pragmatic code.
+'''
 # split into 2 sentences
 
 [personal]

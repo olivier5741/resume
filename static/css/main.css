@@ -24,7 +24,7 @@ body {
   font-size: 1.5em;
 }
 
-h1, h2, h3, h5, li.column-cell, .skills > li {
+h1, h2, h3, h5, li.column-cell {
   margin: 0em;
 }	
 
@@ -76,8 +76,14 @@ ul {
   padding-left: 0em;
 }
 
-header p {
-  font-size: 1.5em;
+.md p {
+  margin: 0.5em;
+}
+
+.md ul {
+  margin: 0em;
+  list-style-type: disc;
+  padding-left: 2em;
 }
 
 article h4, .skills ul li {
@@ -88,7 +94,7 @@ article li {
   margin: 1em 0em;
 }
 
-aside, li.column-cell span {
+aside, li.column-cell span, header .md {
   font-size: 1.2em;
 }
 
@@ -121,8 +127,9 @@ li.column-cell {
 
 .skills > li {
   display: inline-block;
+  margin: 0.5em 0em;
+  padding-right: 1em;
   vertical-align: top;
   width: 230px;
-  padding-right: 1em;
 }
 
