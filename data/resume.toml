@@ -22,7 +22,7 @@ date = "Dec 13 - Dec 14"
 dur = "One year"
 org = "CSC/INASTI"
 place = "Brussels"
-#exc = "In a Dutch and French environnement"
+exc = "Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework." 
 
 [[experiences]]
 title = ".NET Developer"
