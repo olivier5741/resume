@@ -189,3 +189,22 @@ ul.column, ul.skills {
   margin: 0.2em 0em;
 }
 
+.download-links {
+  text-align: right;
+}
+
+.download-links a {
+  font-size:2em;
+  color:#7BBF6A;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.exc {
+  color: black;
+  font-size: 0.5em;
+  display: block;
+}
+
