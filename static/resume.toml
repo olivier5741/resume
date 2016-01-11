@@ -1,0 +1,100 @@
+name="Olivier Wouters"
+job="Analyst/Developer"
+exc="Eager to \n\n- tackle a complex domain\n- engage with business experts\n- join an innovative team driven by agility and simplicity to craft some pragmatic code.\n"
+exctex="Eager to \n\\begin{itemize}\n  \\item tackle a complex domain\n  \\item engage with business experts\n  \\item join an innovative team driven by agility and simplicity to craft some pragmatic code.\n\\end{itemize}\n"
+tags=["golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
+[personal]
+firstname="Olivier"
+lastname="Wouters"
+mobile="+32 (0)476/28.32.71"
+mail="olivier5741@gmail.com"
+addr1="Grand Rue, 40"
+addr2="B-6850 Carlsbourg"
+add1="Driving licence"
+[[experiences]]
+date="Dec 13 - Dec 14"
+title="Application Developer"
+dur="One year"
+exc="Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework."
+org="CSC/INASTI"
+place="Brussels"
+sub=""
+add=""
+[[experiences]]
+date="Feb 13 - May 13"
+title=".NET Developer"
+dur="Three months"
+exc="Analysing and implementing Bewan’s new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
+org="Bewan"
+place="Waterloo"
+sub="internship"
+add=""
+[[experiences]]
+date="August 12"
+title="Developer"
+dur="One month"
+exc="Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation."
+org="Postes Médicaux de Garde Luxembourg-Dinant"
+place="Bièvre (BE)"
+sub="student job"
+add=""
+[[volunteering]]
+date="Dec 14 - Dec 15"
+title="Volunteer work in New Zealand"
+dur="One year"
+exc="Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
+org="WWOOF"
+place=""
+sub=""
+add=""
+[[educations]]
+date="2011-2013"
+title="Bachelor’s Degree in Business Computing"
+dur=""
+exc=""
+org="Haute Ecole de Namur-Liège-Luxembourg"
+place="Namur"
+sub=""
+add=""
+[[educations]]
+date="2008-2011"
+title="B.S. in Engineering (Mechanics and electronics)"
+dur=""
+exc=""
+org="UCL"
+place="Louvain-la-Neuve"
+sub=""
+add="graduated 1st year in 2009"
+[[languages]]
+title="French"
+level="Mother Tongue"
+[[languages]]
+title="English"
+level="Full professional proficiency"
+[[languages]]
+title="Dutch"
+level="Professional working proficiency (writing, speaking) but passive bilingual"
+[[skills]]
+category="Self-Thaught"
+concept=["Domain Driven Design","Agile","NoSQL","CQRS","Event Sourcing","Static Site Generation"]
+tech=["NServiceBus","Git","RavenDB","ServiceStack","PostSharp"]
+lang=["Golang","Erlang"]
+[[skills]]
+category="Work"
+concept=[]
+tech=["LLBLGen","Resharper","WPF","FluentValidation","AutoMapper","SpecFlow"]
+lang=["Csharp","SQL"]
+[[skills]]
+category="School"
+concept=[]
+tech=["AutoCAD (2D)","Robotran","ORCAD"]
+lang=["Java","Matlab","COBOL","Latex"]
+[[interests]]
+title="Sports"
+exc="football, badminton, running"
+[[interests]]
+title="Culture"
+exc="piano, travelling, wwoofing"
+[[interests]]
+title="Memberships"
+exc="voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"

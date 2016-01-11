@@ -7,9 +7,20 @@ Eager to
 - engage with business experts
 - join an innovative team driven by agility and simplicity to craft some pragmatic code.
 '''
+exctex = '''
+Eager to 
+\begin{itemize}
+  \item tackle a complex domain
+  \item engage with business experts
+  \item join an innovative team driven by agility and simplicity to craft some pragmatic code.
+\end{itemize}
+'''
+
 tags = ["golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
 
 [personal]
+firstname = "Olivier"
+lastname = "Wouters"
 addr1 = "Grand Rue, 40"
 addr2 = "B-6850 Carlsbourg"
 mobile = "+32 (0)476/28.32.71"
@@ -57,7 +68,7 @@ tech = ["NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
 
 [[skills]]
 category = "Work"
-lang = ["C#", "SQL"]
+lang = ["Csharp", "SQL"]
 tech = ["LLBLGen", "Resharper", "WPF", "FluentValidation", "AutoMapper", "SpecFlow"]
 
 [[skills]]

@@ -1,0 +1,79 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[green]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{graphicx}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
+
+% Set the length of the left column
+\setlength{\hintscolumnwidth}{3cm}
+
+% Multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+#($p := .Personal)#
+\firstname{#($p.Firstname)#}
+\familyname{#($p.Lastname)#}
+\title{{\Huge #(.Job)#}}              
+\address{#($p.Addr1)#}{#($p.Addr2)#}   
+\mobile{#($p.Mobile)#}                    
+\email{#($p.Mail)#}       
+\extrainfo{#($p.Add1)#}
+%\homepage{www.francoistessier.info}
+
+\begin{document}
+
+\maketitle
+\vspace{-15pt}
+\begin{center}
+\hfill\begin{minipage}{\dimexpr\textwidth-2cm}
+\quotefont{\small{ #(.Exctex)#}}
+\end{minipage}
+\end{center}
+
+\vspace{+10pt}
+
+\section{Work Experience}
+#(range .Experiences)#
+\cventry{#(.Date)#}{#(.Title)#}{#(.Sub)#}{#(.Org)#}{#(.Place)#}{#(.Exc)#\newline{}}
+#(end)#
+
+\section{Volunteering}
+#(range .Volunteering)#
+\cventry{#(.Date)#}{#(.Title)#}{#(.Sub)#}{#(.Org)#}{#(.Place)#}{#(.Exc)#\newline{}}
+#(end)#
+
+\section{Education}
+#(range .Educations)#
+\cventry{#(.Date)#}{#(.Title)#}{#(.Org)#}{#(.Place)#}{#(.Add)#}{}
+#(end)#
+
+\section{Skills}
+\vspace{-20pt}
+
+\begin{multicols}{2}[]
+#(range .Skills)#
+\hspace*{-1,5cm}\subsection{#(.Category)#}
+#( if .Concept )#
+\cvcomputer{\textbf{Concepts}}{#(range .Concept)# #(.)#,#(end)#}{}{}
+#(end)#
+\cvcomputer{\textbf{Languages}}{#(range .Lang)# #(.)#,#(end)#}{}{}
+\cvcomputer{\textbf{Technologies}}{#(range .Tech)# #(.)#,#(end)#}{}{}
+#(end)#
+\end{multicols}
+
+\section{Languages}
+#(range .Languages)#
+\cvlanguage{#(.Title)#}{#(.Level)#}{}
+#(end)#
+
+\section{Interests}
+#(range .Interests)#
+\cvline{#(.Title)#}{#(.Exc)#}{}
+#(end)#
+
+\end{document}
+
