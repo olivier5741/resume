@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[green]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{graphicx}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
+
+% Set the length of the left column
+\setlength{\hintscolumnwidth}{3cm}
+
+% Multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+
+\firstname{Olivier}
+\familyname{Wouters}
+\title{{\Huge Analyst/Developer}}              
+\address{Grand Rue, 40}{B-6850 Carlsbourg}   
+\mobile{+32 (0)476/28.32.71}                    
+\email{olivier5741@gmail.com}       
+\extrainfo{Driving licence}
+%\homepage{www.francoistessier.info}
+
+\begin{document}
+
+\maketitle
+\vspace{-15pt}
+\begin{center}
+\hfill\begin{minipage}{\dimexpr\textwidth-2cm}
+\quotefont{\small{ Eager to 
+\begin{itemize}
+  \item tackle a complex domain
+  \item engage with business experts
+  \item join an innovative team driven by agility and simplicity to craft some pragmatic code.
+\end{itemize}
+}}
+\end{minipage}
+\end{center}
+
+\vspace{+10pt}
+
+\section{Work Experience}
+
+\cventry{Dec 13 - Dec 14}{Application Developer}{}{CSC/INASTI}{Brussels}{Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework.\newline{}}
+
+\cventry{Feb 13 - May 13}{.NET Developer}{internship}{Bewan}{Waterloo}{Analysing and implementing Bewan’s new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB.\newline{}}
+
+\cventry{August 12}{Developer}{student job}{Postes Médicaux de Garde Luxembourg-Dinant}{Bièvre (BE)}{Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation.\newline{}}
+
+
+\section{Volunteering}
+
+\cventry{Dec 14 - Dec 15}{Volunteer work in New Zealand}{}{WWOOF}{}{Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey.\newline{}}
+
+
+\section{Education}
+
+\cventry{2011-2013}{Bachelor’s Degree in Business Computing}{Haute Ecole de Namur-Liège-Luxembourg}{Namur}{}{}
+
+\cventry{2008-2011}{B.S. in Engineering (Mechanics and electronics)}{UCL}{Louvain-la-Neuve}{graduated 1st year in 2009}{}
+
+
+\section{Skills}
+\vspace{-20pt}
+
+\begin{multicols}{2}[]
+
+\hspace*{-1,5cm}\subsection{Self-Thaught}
+
+\cvcomputer{\textbf{Concepts}}{ Domain Driven Design, Agile, NoSQL, CQRS, Event Sourcing, Static Site Generation,}{}{}
+
+\cvcomputer{\textbf{Languages}}{ Golang, Erlang,}{}{}
+\cvcomputer{\textbf{Technologies}}{ NServiceBus, Git, RavenDB, ServiceStack, PostSharp,}{}{}
+
+\hspace*{-1,5cm}\subsection{Work}
+
+\cvcomputer{\textbf{Languages}}{ Csharp, SQL,}{}{}
+\cvcomputer{\textbf{Technologies}}{ LLBLGen, Resharper, WPF, FluentValidation, AutoMapper, SpecFlow,}{}{}
+
+\hspace*{-1,5cm}\subsection{School}
+
+\cvcomputer{\textbf{Languages}}{ Java, Matlab, COBOL, Latex,}{}{}
+\cvcomputer{\textbf{Technologies}}{ AutoCAD (2D), Robotran, ORCAD,}{}{}
+
+\end{multicols}
+
+\section{Languages}
+
+\cvlanguage{French}{Mother Tongue}{}
+
+\cvlanguage{English}{Full professional proficiency}{}
+
+\cvlanguage{Dutch}{Professional working proficiency (writing, speaking) but passive bilingual}{}
+
+
+\section{Interests}
+
+\cvline{Sports}{football, badminton, running}{}
+
+\cvline{Culture}{piano, travelling, wwoofing}{}
+
+\cvline{Memberships}{voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club}{}
+
+
+\end{document}
+
