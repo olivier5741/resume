@@ -103,10 +103,10 @@ exc="voluntary work with young people (Patro - 4 years of experience [2 years as
 [[achievements]]
 name="Stock Manager"
 exc="Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
-exctex="Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported."
+exctex="Encode your stock input, output and inventory (csv files) and let \\textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.\n"
 tech="Golang, Event Sourcing"
 src="https://github.com/olivier5741/stock-manager"
-link=""
+link="https://drone.io/github.com/olivier5741/stock-manager/files"
 [[achievements]]
 name="Resume generator"
 exc="Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)* and generate a pdf *(latex 'moderncv')*"
