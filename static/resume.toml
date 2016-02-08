@@ -1,8 +1,8 @@
 name="Olivier Wouters"
-job="Analyst/Developer"
+job=".Net Developer/Gopher"
 exc="Eager to \n\n- tackle a complex domain\n- engage with business experts\n- join an innovative team driven by agility and simplicity to craft some pragmatic code.\n"
 exctex="Eager to \n\\begin{itemize}\n  \\item tackle a complex domain\n  \\item engage with business experts\n  \\item join an innovative team driven by agility and simplicity to craft some pragmatic code.\n\\end{itemize}\n"
-tags=["golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
+tags=["c#","golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
 [personal]
 firstname="Olivier"
 lastname="Wouters"
@@ -11,6 +11,8 @@ mail="olivier5741@gmail.com"
 addr1="Grand Rue, 40"
 addr2="B-6850 Carlsbourg"
 add1="Driving licence"
+github_link="https://github.com/olivier5741?tab=repositories"
+github="olivier5741"
 [[experiences]]
 date="Dec 13 - Dec 14"
 title="Application Developer"
@@ -77,7 +79,7 @@ level="Professional working proficiency (writing, speaking) but passive bilingua
 [[skills]]
 category="Self-Thaught"
 concept=["Domain Driven Design","Agile","NoSQL","CQRS","Event Sourcing","Static Site Generation"]
-tech=["NServiceBus","Git","RavenDB","ServiceStack","PostSharp"]
+tech=["Resharper","NServiceBus","Git","RavenDB","ServiceStack","PostSharp"]
 lang=["Golang","Erlang"]
 [[skills]]
 category="Work"
@@ -98,3 +100,17 @@ exc="piano, travelling, wwoofing"
 [[interests]]
 title="Memberships"
 exc="voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
+[[achievements]]
+name="Stock Manager"
+exc="Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
+exctex="Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported."
+tech="Golang, Event Sourcing"
+src="https://github.com/olivier5741/stock-manager"
+link=""
+[[achievements]]
+name="Resume generator"
+exc="Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)* and generate a pdf *(latex 'moderncv')*"
+exctex="Write your resume in a minimal language \\textit{(toml)}, serve it as a website \\textit{(hugo)} and generate a pdf \\textit{(latex 'moderncv')}\n"
+tech=""
+src="https://github.com/olivier5741/resume"
+link="http://olivier5741.github.io/resume/"

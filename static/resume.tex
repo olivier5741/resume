@@ -1,14 +1,15 @@
-\documentclass[10pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[green]{classic}                
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.9]{geometry}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{lipsum}% http://ctan.org/pkg/lipsum
 \newcommand{\Csharp}{%
   {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
 
 % Set the length of the left column
-\setlength{\hintscolumnwidth}{3cm}
+\setlength{\hintscolumnwidth}{3.5cm}
 
 % Multicolumns
 \usepackage{multicol}
@@ -17,7 +18,7 @@
 
 \firstname{Olivier}
 \familyname{Wouters}
-\title{{\Huge Analyst/Developer}}              
+\title{{\Huge .Net Developer/Gopher}}              
 \address{Grand Rue, 40}{B-6850 Carlsbourg}   
 \mobile{+32 (0)476/28.32.71}                    
 \email{olivier5741@gmail.com}       
@@ -73,7 +74,7 @@
 \cvcomputer{\textbf{Concepts}}{ Domain Driven Design, Agile, NoSQL, CQRS, Event Sourcing, Static Site Generation,}{}{}
 
 \cvcomputer{\textbf{Languages}}{ Golang, Erlang,}{}{}
-\cvcomputer{\textbf{Technologies}}{ NServiceBus, Git, RavenDB, ServiceStack, PostSharp,}{}{}
+\cvcomputer{\textbf{Technologies}}{ Resharper, NServiceBus, Git, RavenDB, ServiceStack, PostSharp,}{}{}
 
 \hspace*{-1,5cm}\subsection{Work}
 
@@ -94,6 +95,18 @@
 \cvlanguage{English}{Full professional proficiency}{}
 
 \cvlanguage{Dutch}{Professional working proficiency (writing, speaking) but passive bilingual}{}
+
+
+\section{Achievements}
+
+
+\cvline{\textbf{Stock Manager} (\href{https://github.com/olivier5741/stock-manager}{source})}{Encode your stock input, output and inventory (csv files) and let 	extit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.}{}
+
+
+
+\cvline{\textbf{Resume generator} (\href{https://github.com/olivier5741/resume}{source}, \href{http://olivier5741.github.io/resume/}{link})}{Write your resume in a minimal language \textit{(toml)}, serve it as a website \textit{(hugo)} and generate a pdf \textit{(latex 'moderncv')}
+}{}
+
 
 
 \section{Interests}

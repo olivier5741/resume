@@ -1,0 +1,12 @@
+<h4>{{ .name }}</h4> 
+(
+<a href="{{ .src }}">source</a>
+{{if .link}}
+,
+<a href="{{ .link }}">link</a>
+)
+{{else}}
+)
+{{end}}
+{{if .tech}}<span class="italic">{{.tech}}</span>{{end}}
+<p>{{.exc| markdownify}}</p>

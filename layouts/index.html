@@ -24,6 +24,10 @@
       <li>{{$p.addr2}}</li>
       <li>{{$p.mobile}}</li>
       <li>{{$p.mail}}</li>
+      <li>
+      <span class="octicon octicon-octoface"></span>
+      <a href="{{$p.githubLink}}">{{$p.github}}</a>
+      </li>
       <li>{{$p.add1}}</li>
     </ul>
   </aside>
@@ -52,14 +56,20 @@
     </li>
     {{end}}
   </ul>
-  <hr/>
-  <ul>
-    {{range $r.volunteering}}
-    <li>
-      {{ partial "time-element.html" . }}
-    </li>
-    {{end}}
+</article>
+
+<article>
+  <header>
+    <hr/>
+    <h3>Volunteering</h3>
+    <ul>
+      {{range $r.volunteering}}
+      <li>
+        {{ partial "time-element.html" . }}
+      </li>
+      {{end}}
   </ul>
+  </header>
 </article>
 
 <article>
@@ -132,6 +142,20 @@
       	{{end}}
       </ul>
       </div>
+    </li>
+    {{end}}
+  </ul>
+</article>
+
+<article>
+  <header>
+    <hr/>
+    <h3>Achievements</h3>
+  </header>
+  <ul class="column">
+    {{range $r.achievements}}
+    <li class="column-cell">
+      {{ partial "achievement.html" . }}
     </li>
     {{end}}
   </ul>

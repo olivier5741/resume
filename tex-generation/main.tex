@@ -1,14 +1,15 @@
-\documentclass[10pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[green]{classic}                
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.9]{geometry}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{lipsum}% http://ctan.org/pkg/lipsum
 \newcommand{\Csharp}{%
   {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
 
 % Set the length of the left column
-\setlength{\hintscolumnwidth}{3cm}
+\setlength{\hintscolumnwidth}{3.5cm}
 
 % Multicolumns
 \usepackage{multicol}
@@ -68,6 +69,15 @@
 \section{Languages}
 #(range .Languages)#
 \cvlanguage{#(.Title)#}{#(.Level)#}{}
+#(end)#
+
+\section{Achievements}
+#(range .Achievements)#
+#( if .Link )#
+\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source}, \href{#(.Link)#}{link})}{#(.Exctex)#}{}
+#(else)#
+\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source})}{#(.Exctex)#}{}
+#(end)#
 #(end)#
 
 \section{Interests}

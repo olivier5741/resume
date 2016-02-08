@@ -9,7 +9,8 @@ import (
 )
 
 type Personal struct {
-	Firstname, Lastname, Mobile, Mail, Addr1, Addr2, Add1 string
+	Firstname, Lastname, Mobile, Mail, 
+	Addr1, Addr2, Add1, GithubLink, Github string
 }
 
 type Experience struct {
@@ -22,6 +23,10 @@ type Language struct {
 
 type Interest struct {
 	Title, Exc string
+}
+
+type Achievement struct {
+	Name, Exc, Exctex, Tech, Src, Link string
 }
 
 type Skill struct {
@@ -39,6 +44,7 @@ type Resume struct {
 	Languages              []Language
 	Skills                 []Skill
 	Interests              []Interest
+	Achievements		   []Achievement
 }
 
 func GetConfigFromFile(filename string, config interface{}) error {

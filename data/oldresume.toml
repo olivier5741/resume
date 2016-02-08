@@ -1,9 +1,5 @@
 name = "Olivier Wouters"
-job = ".Net Developer/Gopher"
-
-#challenge, dynamic, result-oriented, fluent in team
-#learning new language,creative,motivated
-
+job = "Analyst/Developer"
 exc = '''
 Eager to 
 
@@ -20,7 +16,7 @@ Eager to
 \end{itemize}
 '''
 
-tags = ["c#", "golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
+tags = ["golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
 
 [personal]
 firstname = "Olivier"
@@ -30,8 +26,6 @@ addr2 = "B-6850 Carlsbourg"
 mobile = "+32 (0)476/28.32.71"
 mail = "olivier5741@gmail.com"
 add1 = "Driving licence"
-github = "olivier5741"
-githubLink = "https://github.com/olivier5741?tab=repositories"
 
 [[experiences]]
 title = "Application Developer"
@@ -70,7 +64,7 @@ exc = "Twelve hosts offered to help them in their day-to-day life : conservation
 category = "Self-Thaught"
 lang = ["Golang", "Erlang"]
 concept = ["Domain Driven Design", "Agile", "NoSQL", "CQRS", "Event Sourcing", "Static Site Generation"]
-tech = [ "Resharper", "NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
+tech = ["NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
 
 [[skills]]
 category = "Work"
@@ -106,24 +100,6 @@ level = "Full professional proficiency"
 [[languages]]
 title = "Dutch" 
 level = "Professional working proficiency (writing, speaking) but passive bilingual"
-
-
-[[achievements]]
-name = "Stock Manager"
-exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
-exctex = "Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported."
-tech = "Golang, Event Sourcing"
-link = "https://drone.io/github.com/olivier5741/stock-manager/files"
-src = "https://github.com/olivier5741/stock-manager"
-
-[[achievements]]
-name = "Resume generator" 
-exc = "Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)* and generate a pdf *(latex 'moderncv')*"
-exctex = '''
-Write your resume in a minimal language \textit{(toml)}, serve it as a website \textit{(hugo)} and generate a pdf \textit{(latex 'moderncv')}
-'''
-link = "http://olivier5741.github.io/resume/" # to change to .net gopher 
-src = "https://github.com/olivier5741/resume"
 
 [[interests]]
 title = "Sports"
