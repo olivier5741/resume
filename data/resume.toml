@@ -111,7 +111,9 @@ level = "Professional working proficiency (writing, speaking) but passive biling
 [[achievements]]
 name = "Stock Manager"
 exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
-exctex = "Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported."
+exctex = '''
+Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.
+'''
 tech = "Golang, Event Sourcing"
 link = "https://drone.io/github.com/olivier5741/stock-manager/files"
 src = "https://github.com/olivier5741/stock-manager"
