@@ -1,9 +1,8 @@
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvtheme[green]{classic}                
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.77]{geometry}
 \usepackage{graphicx}
-\usepackage{hyperref}
 \usepackage{lipsum}% http://ctan.org/pkg/lipsum
 \newcommand{\Csharp}{%
   {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\textbf{\#}}}}}
@@ -21,9 +20,13 @@
 \title{{\Huge #(.Job)#}}              
 \address{#($p.Addr1)#}{#($p.Addr2)#}   
 \mobile{#($p.Mobile)#}                    
-\email{#($p.Mail)#}       
-\extrainfo{#($p.Add1)#}
-%\homepage{www.francoistessier.info}
+\email{#($p.Mail)#} 
+\homepage{#($p.Homepage)#}    
+\extrainfo{
+\href{#($p.GithubLink)#}{github.io/#($p.Github)#} \\
+#($p.Add1)# 
+}
+
 
 \begin{document}
 
@@ -52,6 +55,11 @@
 \cventry{#(.Date)#}{#(.Title)#}{#(.Org)#}{#(.Place)#}{#(.Add)#}{}
 #(end)#
 
+\section{Languages}
+#(range .Languages)#
+\cvlanguage{#(.Title)#}{#(.Level)#}{}
+#(end)#
+
 \section{Skills}
 \vspace{-20pt}
 
@@ -66,17 +74,12 @@
 #(end)#
 \end{multicols}
 
-\section{Languages}
-#(range .Languages)#
-\cvlanguage{#(.Title)#}{#(.Level)#}{}
-#(end)#
-
 \section{Achievements}
 #(range .Achievements)#
-#( if .Link )#
-\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source}, \href{#(.Link)#}{link})}{#(.Exctex)#}{}
+#( if .Tech )#
+\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source}, \href{#(.Link)#}{link})}{#(.Exctex)# [#(.Tech)#]}{}
 #(else)#
-\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source})}{#(.Exctex)#}{}
+\cvline{\textbf{#(.Name)#} (\href{#(.Src)#}{source}, \href{#(.Link)#}{link})}{#(.Exctex)#}{}
 #(end)#
 #(end)#
 

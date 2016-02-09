@@ -1,7 +1,7 @@
 name="Olivier Wouters"
 job=".Net Developer/Gopher"
-exc="Eager to \n\n- tackle a complex domain\n- engage with business experts\n- join an innovative team driven by agility and simplicity to craft some pragmatic code.\n"
-exctex="Eager to \n\\begin{itemize}\n  \\item tackle a complex domain\n  \\item engage with business experts\n  \\item join an innovative team driven by agility and simplicity to craft some pragmatic code.\n\\end{itemize}\n"
+exc="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
+exctex="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
 tags=["c#","golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
 [personal]
 firstname="Olivier"
@@ -13,6 +13,7 @@ addr2="B-6850 Carlsbourg"
 add1="Driving licence"
 github_link="https://github.com/olivier5741?tab=repositories"
 github="olivier5741"
+homepage="olivier5741.github.io/resume"
 [[experiences]]
 date="Dec 13 - Dec 14"
 title="Application Developer"
@@ -75,7 +76,7 @@ title="English"
 level="Full professional proficiency"
 [[languages]]
 title="Dutch"
-level="Professional working proficiency (writing, speaking) but passive bilingual"
+level="Professional working proficiency (writing, speaking) \\\\ but passive bilingual"
 [[skills]]
 category="Self-Thaught"
 concept=["Domain Driven Design","Agile","NoSQL","CQRS","Event Sourcing","Static Site Generation"]

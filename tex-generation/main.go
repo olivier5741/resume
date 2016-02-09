@@ -10,7 +10,7 @@ import (
 
 type Personal struct {
 	Firstname, Lastname, Mobile, Mail, 
-	Addr1, Addr2, Add1, GithubLink, Github string
+	Addr1, Addr2, Add1, GithubLink, Github, Homepage string
 }
 
 type Experience struct {

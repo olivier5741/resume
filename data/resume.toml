@@ -1,23 +1,11 @@
 name = "Olivier Wouters"
 job = ".Net Developer/Gopher"
 
-#challenge, dynamic, result-oriented, fluent in team
-#learning new language,creative,motivated
-
 exc = '''
-Eager to 
-
-- tackle a complex domain
-- engage with business experts
-- join an innovative team driven by agility and simplicity to craft some pragmatic code.
+can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism
 '''
 exctex = '''
-Eager to 
-\begin{itemize}
-  \item tackle a complex domain
-  \item engage with business experts
-  \item join an innovative team driven by agility and simplicity to craft some pragmatic code.
-\end{itemize}
+can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism
 '''
 
 tags = ["c#", "golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
@@ -30,6 +18,7 @@ addr2 = "B-6850 Carlsbourg"
 mobile = "+32 (0)476/28.32.71"
 mail = "olivier5741@gmail.com"
 add1 = "Driving licence"
+homepage = "olivier5741.github.io/resume"
 github = "olivier5741"
 githubLink = "https://github.com/olivier5741?tab=repositories"
 
@@ -105,7 +94,7 @@ level = "Full professional proficiency"
 
 [[languages]]
 title = "Dutch" 
-level = "Professional working proficiency (writing, speaking) but passive bilingual"
+level = "Professional working proficiency (writing, speaking) \\\\ but passive bilingual"
 
 
 [[achievements]]
