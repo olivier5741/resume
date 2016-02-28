@@ -1,5 +1,5 @@
 name="Olivier Wouters"
-job=".Net Developer/Gopher"
+job="Software Developer"
 exc="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
 exctex="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
 tags=["c#","golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
@@ -14,6 +14,15 @@ add1="Driving licence"
 github_link="https://github.com/olivier5741?tab=repositories"
 github="olivier5741"
 homepage="olivier5741.github.io/resume"
+[[experiences]]
+date="Dec 14 - Dec 15"
+title="Volunteer work in New Zealand"
+dur="One year"
+exc="Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
+org="WWOOF"
+place=""
+sub=""
+add=""
 [[experiences]]
 date="Dec 13 - Dec 14"
 title="Application Developer"
@@ -40,15 +49,6 @@ exc="Implementing tools easing the coordinator its work : personal data and labo
 org="Postes Médicaux de Garde Luxembourg-Dinant"
 place="Bièvre (BE)"
 sub="student job"
-add=""
-[[volunteering]]
-date="Dec 14 - Dec 15"
-title="Volunteer work in New Zealand"
-dur="One year"
-exc="Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
-org="WWOOF"
-place=""
-sub=""
 add=""
 [[educations]]
 date="2011-2013"
@@ -101,6 +101,13 @@ exc="piano, travelling, wwoofing"
 [[interests]]
 title="Memberships"
 exc="voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
+[[achievements]]
+name="Rokiwi Blog"
+exc="A private travel blog (New Zealand, Samoa and Thailand). French and English posts."
+exctex="A private travel blog (New Zealand, Samoa and Thailand). French and English posts"
+tech="Static Site Generation, Jekyll, Github Pages, HTML, CSS, Javascript (google maps api), SASS"
+src="https://github.com/rokiwi/rokiwi.github.io"
+link="http://rokiwi.github.io/"
 [[achievements]]
 name="Stock Manager"
 exc="Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
