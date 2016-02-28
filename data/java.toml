@@ -8,7 +8,7 @@ exctex = '''
 can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism
 '''
 
-tags = ["c#", "golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
+tags = ["c#", "golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "erlang"]
 
 [personal]
 firstname = "Olivier"
@@ -21,13 +21,6 @@ add1 = "Driving licence"
 homepage = "olivier5741.github.io/resume"
 github = "olivier5741"
 githubLink = "https://github.com/olivier5741?tab=repositories"
-
-[[experiences]]
-title = "Volunteer work in New Zealand"
-date = "Dec 14 - Dec 15"
-dur = "One year"
-org = "WWOOF"
-exc = "Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
 
 [[experiences]]
 title = "Application Developer"
@@ -55,11 +48,18 @@ org = "Postes Médicaux de Garde Luxembourg-Dinant"
 place = "Bièvre (BE)"
 exc = "Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation."
 
+[[volunteering]]
+title = "Volunteer work in New Zealand"
+date = "Dec 14 - Dec 15"
+dur = "One year"
+org = "WWOOF"
+exc = "Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
+
 [[skills]]
 category = "Self-Thaught"
 lang = ["Golang", "Erlang"]
 concept = ["Domain Driven Design", "Agile", "NoSQL", "CQRS", "Event Sourcing", "Static Site Generation"]
-tech = [ "Resharper", "NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
+tech = [ "Resharper", "NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp", "NHibernate"]
 
 [[skills]]
 category = "Work"
@@ -106,9 +106,9 @@ src = "https://github.com/rokiwi/rokiwi.github.io"
 
 [[achievements]]
 name = "Stock Manager"
-exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
+exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported. *Internationalization* through i18n"
 exctex = '''
-Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.
+Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.  \textbf{Internationalization} through i18n.
 '''
 tech = "Golang, Event Sourcing"
 link = "https://drone.io/github.com/olivier5741/stock-manager/files"
@@ -120,6 +120,7 @@ exc = "Write your resume in a minimal language *(toml)*, serve it as a website *
 exctex = '''
 Write your resume in a minimal language \textit{(toml)}, serve it as a website \textit{(hugo)} and generate a pdf \textit{(latex 'moderncv')}
 '''
+tech = "Hugo, HTML, CSS, Latex"
 link = "http://olivier5741.github.io/resume/" # to change to .net gopher 
 src = "https://github.com/olivier5741/resume"
 
