@@ -56,7 +56,7 @@ place = "Bièvre (BE)"
 exc = "Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation."
 
 [[skills]]
-category = "Self-Thaught"
+category = "Self-Taught"
 lang = ["Golang", "Erlang"]
 concept = ["Domain Driven Design", "Agile", "NoSQL", "CQRS", "Event Sourcing", "Static Site Generation"]
 tech = [ "Resharper", "NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
