@@ -1,0 +1,136 @@
+name = "Olivier Wouters"
+job = "Software Developer"
+
+exc = '''
+can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism
+'''
+exctex = '''
+can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism
+'''
+
+tags = ["c#", "golang", "domain driven design", "agile", "nosql", "nservicebus", "reshaper", "git", "hugo", "erlang"]
+
+[personal]
+firstname = "Olivier"
+lastname = "Wouters"
+addr1 = "Grand Rue, 40"
+addr2 = "B-6850 Carlsbourg"
+mobile = "+32 (0)476/28.32.71"
+mail = "olivier5741@gmail.com"
+add1 = "Driving licence"
+homepage = "olivier5741.github.io/resume"
+github = "olivier5741"
+githubLink = "https://github.com/olivier5741?tab=repositories"
+
+[[experiences]]
+title = "Volunteer work in New Zealand"
+date = "Dec 14 - Dec 15"
+dur = "One year"
+org = "WWOOF"
+exc = "Twelve hosts offered to help them in their day-to-day life : conservation work, organic farming, small building projects, ... A private Jekyll blog recount this adventurous journey."
+
+[[experiences]]
+title = "Application Developer"
+date = "Dec 13 - Dec 14"
+dur = "One year"
+org = "CSC/INASTI"
+place = "Brussels"
+exc = "Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework." 
+
+[[experiences]]
+title = ".NET Developer"
+sub = "internship"
+date = "Feb 13 - May 13"
+dur = "Three months"
+org = "Bewan"
+place = "Waterloo"
+exc = "Analysing and implementing Bewan’s new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
+
+[[experiences]]
+title = "Developer"
+sub = "student job"
+date = "August 12"
+dur = "One month"
+org = "Postes Médicaux de Garde Luxembourg-Dinant"
+place = "Bièvre (BE)"
+exc = "Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation."
+
+[[skills]]
+category = "Self-Taught"
+lang = ["Golang", "Erlang"]
+concept = ["Domain Driven Design", "Agile", "NoSQL", "CQRS", "Event Sourcing", "Static Site Generation"]
+tech = [ "Resharper", "NServiceBus", "Git", "RavenDB", "ServiceStack", "PostSharp"]
+
+[[skills]]
+category = "Work"
+lang = ["Csharp", "SQL"]
+tech = ["LLBLGen", "Resharper", "WPF", "FluentValidation", "AutoMapper", "SpecFlow"]
+
+[[skills]]
+category = "School"
+lang = ["Java", "Matlab", "COBOL", "Latex"]
+tech = ["AutoCAD (2D)", "Robotran", "ORCAD"]
+
+[[educations]]
+title = "Bachelor’s Degree in Business Computing"
+date = "2011-2013"
+org = "Haute Ecole de Namur-Liège-Luxembourg"
+place = "Namur"
+
+[[educations]]
+title = "B.S. in Engineering (Mechanics and electronics)"
+date ="2008-2011"
+org = "UCL"
+place ="Louvain-la-Neuve"
+add = "graduated 1st year in 2009"
+
+[[languages]]
+title = "French" 
+level = "Mother Tongue"
+
+[[languages]]
+title = "English" 
+level = "Full professional proficiency"
+
+[[languages]]
+title = "Dutch" 
+level = "Professional working proficiency (writing, speaking) \\\\ but passive bilingual"
+
+[[achievements]]
+name = "Rokiwi Blog"
+exc = "A private travel blog (New Zealand, Samoa and Thailand). French and English posts."
+exctex = "A private travel blog (New Zealand, Samoa and Thailand). French and English posts"
+tech = "Static Site Generation, Jekyll, Github Pages, HTML, CSS, Javascript (google maps api), SASS"
+link = "http://rokiwi.github.io/"
+src = "https://github.com/rokiwi/rokiwi.github.io"
+
+[[achievements]]
+name = "Stock Manager"
+exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
+exctex = '''
+Encode your stock input, output and inventory (csv files) and let \textit{Stock Manager} generate your current stock state and the stock goods evolution. Multi-unit supported.
+'''
+tech = "Golang, Event Sourcing"
+link = "https://drone.io/github.com/olivier5741/stock-manager/files"
+src = "https://github.com/olivier5741/stock-manager"
+
+[[achievements]]
+name = "Resume generator" 
+exc = "Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)* and generate a pdf *(latex 'moderncv')*"
+exctex = '''
+Write your resume in a minimal language \textit{(toml)}, serve it as a website \textit{(hugo)} and generate a pdf \textit{(latex 'moderncv')}
+'''
+link = "http://olivier5741.github.io/resume/" # to change to .net gopher 
+src = "https://github.com/olivier5741/resume"
+
+[[interests]]
+title = "Sports"
+exc =  "football, badminton, running"
+
+[[interests]]
+title = "Culture"
+exc = "piano, travelling, wwoofing"
+
+[[interests]]
+title = "Memberships"
+exc = "voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
