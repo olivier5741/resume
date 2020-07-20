@@ -122,7 +122,7 @@ ul {
 .tags li {
   display: inline-block;
   background-color: #7BBF6A;
-  color: white;
+  color: white; 
   margin: 0.2em;
   padding: 0.3em;
 }
