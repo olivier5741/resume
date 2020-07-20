@@ -1,3 +1,4 @@
 baseurl = "olivier5741.github.io/resume"
 languageCode = "en-us"
 title = "Olivier Wouters - Resume"
+staticDir = ["static", "data"] 

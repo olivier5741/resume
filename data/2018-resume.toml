@@ -1,19 +1,28 @@
 name="Olivier Wouters"
 job="Software Developer"
-exc="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
-exctex="can't wait to tackle a complex domain, interact with an innovative agile team and code aiming for simplicity and pragmatism\n"
-tags=["c#","golang","domain driven design","agile","nosql","nservicebus","reshaper","git","hugo","erlang"]
+exc="The digital world is pulling the strings. Committed to good design and creativity could you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
+exctex="The digital world is pulling the strings. Committed to good design and creativity could you branch nowadays issues? Let's merge our efforts and push something [really] useful to the world.\n"
+tags=["c#","golang","domain driven design","agile","nosql","microservices","event driven","best principles"]
 [personal]
 firstname="Olivier"
 lastname="Wouters"
-mobile="+32 (0)476/28.32.71"
+mobile="+61 (0)448/369.125"
 mail="olivier5741@gmail.com"
-addr1="Grand Rue, 40"
-addr2="B-6850 Carlsbourg"
+addr1="34 rue du Culot"
+addr2="B-1435 Mont-Saint-Guibert"
 add1="Driving licence"
 github_link="https://github.com/olivier5741?tab=repositories"
 github="olivier5741"
 homepage="olivier5741.github.io/resume"
+[[experiences]]
+date="March 16 - Now"
+title="Software Developer"
+dur="23 months"
+exc="Automating communication solutions (sms, call, mail) from tailored short deadline projects (API, web, service) till platform creation (new mail platform). Make your code resilient, learn to prioritize and do API/DTO first development."
+org="The RingRing Company"
+place="Brussels"
+sub=""
+add=""
 [[experiences]]
 date="Dec 14 - Dec 15"
 title="Volunteer work in New Zealand"
@@ -36,7 +45,7 @@ add=""
 date="Feb 13 - May 13"
 title=".NET Developer"
 dur="Three months"
-exc="Analysing and implementing Bewan’s new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
+exc="Analysing and implementing Bewan's new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
 org="Bewan"
 place="Waterloo"
 sub="internship"
@@ -46,16 +55,16 @@ date="August 12"
 title="Developer"
 dur="One month"
 exc="Implementing tools easing the coordinator its work : personal data and labour input aggregation, bank transfer automation, salary calculation."
-org="Postes Médicaux de Garde Luxembourg-Dinant"
-place="Bièvre (BE)"
+org="Postes Medicaux de Garde Luxembourg-Dinant"
+place="Bievre (BE)"
 sub="student job"
 add=""
 [[educations]]
 date="2011-2013"
-title="Bachelor’s Degree in Business Computing"
+title="Bachelor's Degree in Business Computing"
 dur=""
 exc=""
-org="Haute Ecole de Namur-Liège-Luxembourg"
+org="Haute Ecole de Namur-Liege-Luxembourg"
 place="Namur"
 sub=""
 add=""
@@ -76,28 +85,25 @@ title="English"
 level="Full professional proficiency"
 [[languages]]
 title="Dutch"
-level="Professional working proficiency (writing, speaking) \\\\ but passive bilingual"
+level="Professional working proficiency (writing, speaking) but passive bilingual"
 [[skills]]
-category="Self-Thaught"
-concept=["Domain Driven Design","Agile","NoSQL","CQRS","Event Sourcing","Static Site Generation"]
-tech=["Resharper","NServiceBus","Git","RavenDB","ServiceStack","PostSharp"]
+category="Self-Tought"
+concept=["Domain Driven Design","Agile","NoSQL","Event Sourcing","Static Site Generation", "Machine learning (in progress)"]
+tech=["NServiceBus","RavenDB"]
 lang=["Golang","Erlang"]
 [[skills]]
 category="Work"
-concept=[]
-tech=["LLBLGen","Resharper","WPF","FluentValidation","AutoMapper","SpecFlow"]
-lang=["Csharp","SQL"]
+concept=["MicroServices", "Vertical design","CQRS", "Event Driven", "Star Schema"]
+tech=["ServiceStack",".net core","RabbitMQ","Ormlite","Git","MySQL","Rider (IntelliJ)","Postman (+ tests)","Resharper","SpecFlow"]
+lang=["Csharp","Javascript"]
 [[skills]]
 category="School"
 concept=[]
 tech=["AutoCAD (2D)","Robotran","ORCAD"]
 lang=["Java","Matlab","COBOL","Latex"]
 [[interests]]
-title="Sports"
-exc="football, badminton, running"
-[[interests]]
-title="Culture"
-exc="piano, travelling, wwoofing"
+title="Hobbies"
+exc="running, piano, gardening, travelling, wwoofing, reading (newspapers, magazines)"
 [[interests]]
 title="Memberships"
 exc="voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
