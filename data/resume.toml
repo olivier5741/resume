@@ -87,7 +87,7 @@ level="Full professional proficiency"
 title="Dutch"
 level="Professional working proficiency (writing, speaking) but passive bilingual"
 [[skills]]
-category="Self-Taught"
+category="Self-Tought"
 concept=["Domain Driven Design","Agile","NoSQL","Event Sourcing","Static Site Generation", "Machine learning (in progress)"]
 tech=["NServiceBus","RavenDB"]
 lang=["Golang","Erlang"]
