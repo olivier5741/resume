@@ -114,9 +114,6 @@ ul {
   margin-left: 9em;
 }
 
-.md ul, .tags {
-}
-
 .tags {
   margin-left: 9em;
   margin-top: 1em;
@@ -126,12 +123,13 @@ ul {
   display: inline-block;
   background-color: #7BBF6A;
   color: white;
-  margin: 0.2em 0em;
+  margin: 0.2 em;
   padding: 0.3em;
 }
 
 article h4, .skills ul li {
   display: inline;
+  margin-right: 0.2em;
 }
 
 article li {
@@ -208,3 +206,57 @@ ul.column, ul.skills {
   display: block;
 }
 
+BBF6A;
+  color: white;
+  margin: 0.2em 0em;
+  padding: 0.3em;
+}
+
+article h4, .skills ul li {
+  display: inline;
+}
+
+article li {
+  margin: 1em 0em;
+}
+
+aside, header .md {
+  font-size: 1.2em;
+}
+
+aside {
+  float: right;
+  text-align: right;
+  margin-top: 1.5em;
+  color: grey;
+}
+
+aside span, ul.column span, .time, .time span {
+  display: block;
+}
+
+li.column-cell {
+  margin-right: 4em;
+  margin-bottom: 0.5em;
+  float: left;
+  max-width: 280px;
+}
+
+.time {
+  width: 9em;
+}
+
+.duration {
+  font-weight: 600;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+ul.column, ul.skills {
+  margin-top: 1em;
+  margin-left: 9em;
+}
+
+.skills > li {
