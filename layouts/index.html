@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
 </head> 
 <body>
+
+<div class="container">
+
 <header class="text-right">
   <a class="btn btn-secondary" href="resume.toml"><span class="octicon octicon-file-code"></span>&nbsp TOML</a>
   <a class="btn btn-primary" href="resume.pdf"><span class="octicon octicon-file-pdf"></span>&nbsp PDF</a>
@@ -20,8 +23,10 @@
   
  <article>
     <h1>{{$r.name}}</h1>
-    <h2>{{$r.job}}</h2>
-    <div class="md">{{$r.exc | markdownify}}   </div>
+    <div class="h2">{{$r.job}}</div>
+    <p class="lead">
+      {{$r.exc | markdownify}}   
+    </p>
     <div class="tags">
       {{range $r.tags}}
         <span class="badge badge-primary">
@@ -48,116 +53,96 @@
 
 <article>
   <header>
-    <h3>Work Experience</h3>
+    <h2>Work Experience</h2>
   </header> 
   <!-- this block is the same 3 times -->
-  <ul>
+  <div class="card-column">
     {{range $r.experiences}}
-    <li>
       {{ partial "time-element.html" . }}
-    </li>
     {{end}}
-  </ul>
+  </div>
 </article>
 
 <article>
   <header>
-    <h3>Education</h3>
+    <h2>Education</h2>
   </header> 
-  <ul>
+  <div class="card-column">
     {{range $r.educations}}
-    <li>
       {{ partial "time-element.html" . }}
-    </li>
     {{end}}
-  </ul>
+  </div>
 </article>
 
 <article>
   <header>
-    <h3>Languages</h3>
+    <h2>Languages</h2>
   </header>
-  <ul class="column">
+  <div class="card-column text-center ">
     {{range $r.languages}}
-    <li class="column-cell">
-      <h4>{{.title}}</h4>
-      <span>{{.level}}</span>
-    </li>
+    <div class="card">
+      <h4 class="card-title">{{.title}}</h4>
+      <p class="card-text">{{.level}}</p >
+    </div>
     {{end}}
-  </ul>
+  </div>
 </article>
 
 <article>
   <header>
-    <h3>Skills</h3>
+    <h2>Skills</h2>
   </header>
-  <ul class="skills">
+  <div class="row">
     {{range $r.skills}}
-    <li>
+    <div class="col-sm">
       <h5>{{.category}}</h5>
+     
+      <div class="row">
       {{ if .concept }}
-      <div>
-      <span class="table-cell mega-octicon octicon-mortar-board"></span>
-      <ul class="table-cell">
-        {{range .concept}}
-      	<li>
-      		{{.}},
-      	</li>
-      	{{end}}
-      </ul>
+        {{ partial "skill-element.html" (dict "context" .concept "octicon" "mortar-board") }}
+      {{end}}
+      
+      {{ if .lang }}
+        {{ partial "skill-element.html" (dict "context" .lang "octicon" "code") }}
+      {{end}}
+      
+      {{ if .tech }}
+        {{ partial "skill-element.html" (dict "context" .tech "octicon" "tools") }}
       {{end}}
       </div>
-      <div>
-      <span class="table-cell mega-octicon octicon-code"></span>
-      <ul class="table-cell">
-        {{range .lang}}
-      	<li>
-      		{{.}},
-      	</li>
-      	{{end}}
-      </ul>
-      </div>
-      <div>
-      <span class="table-cell mega-octicon octicon-tools"></span>
-      <ul class="table-cell">
-        {{range .tech}}
-      	<li>
-      		{{.}},
-      	</li>
-      	{{end}}
-      </ul>
-      </div>
-    </li>
+    </div>
     {{end}}
-  </ul>
+  </div>
 </article>
 
 <article>
   <header>
-    <h3>Achievements</h3>
+    <h2>Achievements</h2>
   </header>
-  <ul class="column">
+  <div>
     {{range $r.achievements}}
-    <li class="column-cell">
+    <p>
       {{ partial "achievement.html" . }}
-    </li>
+    </p>
     {{end}}
-    </ul>
+  </div>
 </article>
 
 <article>
   <header>
-    <h3>Interests</h3>
+    <h2>Interests</h2>
   </header>
-  <ul class="column">
+  <div>
     {{range $r.interests}}
-    <li class="column-cell">
+    <div>
       <h5>{{.title}}</h5>
-      <span>{{.exc}}</span>
-    </li>
+      <p>{{.exc}}</p>
+    </div>
     {{end}}
-  </ul>
+  </div>
 </article>
+
+</div>
 
 </body> 
-</html> 
+</html>  

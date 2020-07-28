@@ -1,7 +1,6 @@
 name="Olivier Wouters"
 job="Software Developer"
-exc="The digital world is pulling the strings. Committed to good design and creativity could you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
-exctex="The digital world is pulling the strings. Committed to good design and creativity could you branch nowadays issues? Let's merge our efforts and push something [really] useful to the world.\n"
+exc="The digital world is pulling the strings. Committed to good design and creativity, can you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
 tags=["c#","golang","domain driven design","agile","nosql","microservices","event driven","best principles"]
 [personal]
 firstname="Olivier"
@@ -17,7 +16,7 @@ homepage="olivier5741.github.io/resume"
 [[experiences]]
 date="Feb 19 - now"
 title="Volunteer work in Australia"
-dur="18 months"
+dur="18 months" 
 exc="Farm hand on a cattle station in remote WA, milking sheep/cows in south WA, picking and processing olives to make oil in Tasmania,..."
 org="Workaway"
 place=""
@@ -79,7 +78,7 @@ sub=""
 add=""
 [[educations]]
 date="2008-2011"
-title="B.S. in Engineering (Mechanics and electronics)"
+title="B.S. in Engineering (mechanics and electronics)"
 dur=""
 exc=""
 org="UCL"
