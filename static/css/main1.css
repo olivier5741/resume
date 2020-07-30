@@ -1,0 +1,11 @@
+h2 {
+  color: #7BBF6A;
+}
+
+.btn-primary, .badge-primary {
+  background-color: #7BBF6A;
+}
+
+.btn-primary {
+  border-color: #7BBF6A;
+}

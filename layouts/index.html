@@ -4,7 +4,8 @@
 <head> <!-- Required meta tags --> 
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS --> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main1.css">
   <title>{{$r.name}} - Resume</title> 
   <!-- find a way to put this inside the .toml -->
   <meta name="description" content="{{$r.name}} resume. Analyst / Developer. Eager to tackle a complex domain, engage with business experts and join an innovative team driven by agility and simplicity to craft some pragmatic code. Belgium, Namur">
@@ -13,80 +14,117 @@
 </head> 
 <body>
 
-<div class="container">
-
-<header class="text-right">
+<nav class="navbar navbar-light bg-light d-print-none">
+  <div class="btn-group d-sm-none">
+    {{$p := $r.personal}}
+    <a class="btn btn-light" href="tel:{{$p.mobile}}">
+      <span class="mega-octicon octicon-device-mobile"></span>
+    </a>
+    
+    <a class="btn btn-light" href="mailto:{{$p.mail}}">
+      <span class="mega-octicon octicon-mail"></span>
+    </a>
+    
+    <a class="btn btn-light" href="{{$p.github_link}}">
+      <span class="mega-octicon octicon-octoface"></span>
+    </a>
+  </div>
+  
+  <div class="ml-auto">
   <a class="btn btn-secondary" href="resume.toml"><span class="octicon octicon-file-code"></span>&nbsp TOML</a>
   <a class="btn btn-primary" href="resume.pdf"><span class="octicon octicon-file-pdf"></span>&nbsp PDF</a>
-</header>
+  </div>
+</nav>
 
+<div class="container mt-3">
   
- <article>
-    <h1>{{$r.name}}</h1>
+<article>
+     {{range $r.languages}}
+        <span class="badge badge-light float-right ">
+         {{.short}}
+        </span>
+     {{end}} 
+    <h1>
+      {{$r.name}}
+    </h1>
+    
     <div class="h2">{{$r.job}}</div>
     <p class="lead">
       {{$r.exc | markdownify}}   
     </p>
-    <div class="tags">
+    <h4 class="tags">
       {{range $r.tags}}
         <span class="badge badge-primary">
          {{.}}
         </span>
       {{end}}
-    </div>
-</article>   
+    </h4>
+</article>
+
+<hr/>
   
-<article>
+<article class="d-none d-md-block d-print-block">
     {{$p := $r.personal}}
     <address>
       {{$p.addr1}}<br>
       {{$p.addr2}}<br>
-      <span class="octicon octicon-device-mobile  "></span>{{$p.mobile}}<br>
+      <span class="octicon octicon-device-mobile"></span>{{$p.mobile}}<br>
       <span class="octicon octicon-mail"></span>
       <a href="mailto:{{$p.mail}}">{{$p.mail}}
       <a><br>
       <span class="octicon   octicon-octoface"></span>
-      <a href="{{$p.githubLink}}">{{$p.github}}</a><br>
+      <a href="{{$p.github_link}}">{{$p.github}}</a><br>
       <span class="octicon octicon-rocket "></span>{{$p.add1}}<br> 
     <address>
 </article>
 
 <article>
   <header>
-    <h2>Work Experience</h2>
+    <h2 class="d-flex justify-content-between">
+      <span>Work Experience</span>
+      <button class="btn" data-parent="#experiences" data-toggle="collapse" data-target=".experience-body">
+        Collapse  all
+      </button>
+    </h2>
   </header> 
   <!-- this block is the same 3 times -->
-  <div class="card-column">
+  <div id="experiences" class="card-group">
     {{range $r.experiences}}
       {{ partial "time-element.html" . }}
     {{end}}
   </div>
 </article>
 
+<hr/>
+
 <article>
   <header>
     <h2>Education</h2>
   </header> 
-  <div class="card-column">
+  <div class="card-columns">
     {{range $r.educations}}
       {{ partial "time-element.html" . }}
     {{end}}
   </div>
 </article>
 
+<hr/>
+
 <article>
   <header>
     <h2>Languages</h2>
   </header>
-  <div class="card-column text-center ">
+  <div class="row text-center row-cols-2 row-cols-md-3">
     {{range $r.languages}}
-    <div class="card">
+    <div class="card col m-2">
       <h4 class="card-title">{{.title}}</h4>
       <p class="card-text">{{.level}}</p >
     </div>
     {{end}}
   </div>
 </article>
+
+<hr/>
 
 <article>
   <header>
@@ -115,6 +153,8 @@
   </div>
 </article>
 
+<hr/>
+
 <article>
   <header>
     <h2>Achievements</h2>
@@ -127,6 +167,8 @@
     {{end}}
   </div>
 </article>
+
+<hr/>
 
 <article>
   <header>
@@ -143,6 +185,8 @@
 </article>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 
 </body> 
 </html>  
