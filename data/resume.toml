@@ -1,7 +1,7 @@
 name="Olivier Wouters"
 job="Software Developer"
 exc="The digital world is pulling the strings. Committed to good design and creativity, can you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
-tags=["c#","golang","domain driven design","agile","nosql","microservices","event driven","best principles"]
+tags=["c#","go","domain driven design","agile","nosql","microservices","event driven","best principles"]
 [personal]
 firstname="Olivier"
 lastname="Wouters"
@@ -128,18 +128,19 @@ title="Memberships"
 exc="voluntary work with young people (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
 [[achievements]]
 name="Rokiwi Blog"
-exc="A private travel blog (New Zealand and Australia). French and English posts." 
+exc="A private travel blog (New Zealand and Australia). French and English posts."
+tech=["hugo"]
 src="https://github.com/rokiwi/rokiwi.github.io"
 link="http://rokiwi.github.io/"
 [[achievements]]
 name="Stock Manager"
 exc="Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
-tech="Golang, Event Sourcing"
+tech=["go","event sourcing"]
 src="https://github.com/olivier5741/stock-manager"
 link="https://drone.io/github.com/olivier5741/stock-manager/files"
 [[achievements]]
 name="Resume generator"
 exc="Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)*"
-tech=""
+tech=["hugo", "toml", "bootstrap"]
 src="https://github.com/olivier5741/resume"
 link="http://olivier5741.github.io/resume/"
