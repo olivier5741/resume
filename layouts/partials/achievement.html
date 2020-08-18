@@ -2,9 +2,11 @@
 
 {{ .name }}
 
+{{if .link}}
 <a class="btn btn-light btn-sm d-print-none" href="{{ .link }}">
 <span class="octicon octicon-link"></span>
 </a>
+{{end}}
 
 <a class="btn btn-light btn-sm d-print-none" href="{{ .src }}">
 <span class="octicon octicon-code"></span>
