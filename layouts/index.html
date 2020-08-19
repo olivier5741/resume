@@ -16,16 +16,15 @@
 
 <nav class="navbar navbar-light bg-light d-print-none">
   <div class="btn-group d-sm-none">
-    {{$p := $r.personal}}
-    <a class="btn btn-light" href="tel:{{$p.mobile}}">
+    <a class="btn btn-light" href="tel:{{$r.contact.phone_number}}">
       <span class="mega-octicon octicon-device-mobile"></span>
     </a>
     
-    <a class="btn btn-light" href="mailto:{{$p.mail}}">
+    <a class="btn btn-light" href="mailto:{{$r.contact.email}}">
       <span class="mega-octicon octicon-mail"></span>
     </a>
     
-    <a class="btn btn-light" href="{{$p.github_link}}">
+    <a class="btn btn-light" href="{{$r.social.github_url}}">
       <span class="mega-octicon octicon-octoface"></span>
     </a>
   </div>
@@ -36,12 +35,28 @@
   </div>
 </nav>
 
+
+
 <div class="container mt-3">
   
+  <article class="float-right d-none d-md-block d-print-block">
+    <address>
+      <span class="octicon octicon-device-mobile"></span>{{$r.contact.phone_number}}<br>
+      <span class="octicon octicon-mail"></span>
+      <a href="mailto:{{$r.contact.email}}">{{$r.contact.email}}
+      <a><br>
+      <span class="octicon   octicon-octoface"></span>
+      <a href="{{$r.social.github_url}}">{{$r.social.github_name}}</a><br>
+      <span class="octicon octicon-rocket "></span>{{$r.transport.exc}}<br> 
+    <address>
+  </article>
+
+  
   <article>
-      {{range $r.languages}}
-        <span class="badge badge-light float-right ">
-         {{.short}}
+     
+     {{range $r.languages}}
+        <span class="d-sm-none badge badge-light float-right">
+         {{.title_short}}
         </span>
      {{end}} 
     <h1>
@@ -49,7 +64,7 @@
     </h1>
     
     <div class="h2">{{$r.job}}</div>
-    <p class="lead">
+    <p  class="lead">
       {{$r.exc | markdownify}}   
     </p>
     <h4 class="tags">
@@ -63,21 +78,6 @@
 
 <hr/>
   
-<article class="d-none d-md-block d-print-block">
-    {{$p := $r.personal}}
-    <address>
-      {{$p.addr1}}<br>
-      {{$p.addr2}}<br>
-      <span class="octicon octicon-device-mobile"></span>{{$p.mobile}}<br>
-      <span class="octicon octicon-mail"></span>
-      <a href="mailto:{{$p.mail}}">{{$p.mail}}
-      <a><br>
-      <span class="octicon   octicon-octoface"></span>
-      <a href="{{$p.github_link}}">{{$p.github}}</a><br>
-      <span class="octicon octicon-rocket "></span>{{$p.add1}}<br> 
-    <address>
-</article>
-
 <article>
   <header>
     <h2 class="d-flex justify-content-between">
