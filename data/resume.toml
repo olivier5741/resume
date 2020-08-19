@@ -1,5 +1,6 @@
 name = "Olivier Wouters"
-job = "Software Developers "
+job = "Software Developer"
+
 exc = "The digital world is pulling the strings. Committed to good design and creativity, can you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
 
 tags = [
@@ -13,9 +14,6 @@ tags = [
   "best principles"
 ]
 
-[transport]
-exc = "Driving licence"
-
 [contact]
 phone_number = "+61 448/369.125"
 email = "olivier5741@gmail.com"
@@ -24,6 +22,9 @@ email = "olivier5741@gmail.com"
 github_url = "https://github.com/olivier5741"
 github_name = "olivier5741"
 site_url = "olivier5741.github.io/resume"
+
+[transport]
+exc = "Driving licence"
 
 [languages]
 
@@ -42,77 +43,18 @@ site_url = "olivier5741.github.io/resume"
   title_short = "NL"
   level = "Professional working proficiency     (writing, speaking) but passive bilingual"
 
+[interests]
 
-[[experiences]]
-date_range_name = "Feb 19 - now"
-title = "Volunteer work in Australia"
-duration_name = "18 months"
-exc = "Farm hand on a cattle station in remote WA, milking sheep/cows in south WA, picking and processing olives to make oil in Tasmania,..."
-org_name = "Workaway"
-pin = false
+  [interests.hobbies]
+  title = "Hobbies"
+  exc = "running, piano, gardening,     travelling, volunteering, reading (newspapers, magazines)"
 
-[[experiences]]
-date_range_name = "March 16 - Dec 18"
-title = "Software Developer"
-duration_name = "< 3 years"
-exc = "Automating communication solutions (sms, call, mail) from tailored short deadline projects (API, web, service) till platform creation (new mail platform). Make your code resilient, learn to prioritize and do API/DTO first development."
-org_name = "The RingRing Company"
-place_name = "Brussels"
-pin = true
+  [interests.memberships]
+  title = "Memberships"
+  exc = "voluntary work with young people   (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
 
-[[experiences]]
-date_range_name = "Dec 14 - Dec 15"
-title = "Volunteer work in New Zealand"
-duration_name = "One year"
-exc = "Twelve hosts welcomed me and my partner in their day-to-day life : conservation work, organic farming, small building projects, ..."
-org_name = "WWOOF"
-pin = false
-
-[[experiences]]
-date_range_name = "Dec 13 - Dec 14"
-title = "Application Developer"
-duration_name = "One year"
-exc = "Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework."
-org_name = "CSC/INASTI"
-place_name = "Brussels"
-pin = false
-
-[[experiences]]
-date_range_name = "Feb 13 - May 13"
-title = ".NET Developer"
-duration_name = "Three months"
-exc = "Analysing and implementing Bewan's new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
-org_name = "Bewan"
-place_name = "Waterloo"
-sub = "internship"
-pin = false
-
-[[experiences]]
-date_range_name = "August 12"
-title = "Developer"
-duration_name = "One month"
-exc = "Implementing tools to ease the work of the coordinator: personal data and labour input aggregation, bank transfer automation, salary calculation."
-org_name = "PMG Luxembourg-Dinant"
-place_name = "Bièvre (BE)"
-sub = "student job"
-pin = false
-
-[[educations]]
-date_range_name = "2011-2013"
-title = "Bachelor's Degree in Business Computing"
-org_name = "Hénallux"
-place_name = "Namur"
-pin = false
-
-[[educations]]
-date_range_name = "2008-2011"
-title = "B.S. in Engineering (mechanics and electronics)"
-org_name = "UCL"
-place_name = "Louvain-la-Neuve"
-add = "graduated 1st year in 2009"
-pin = false
-
-
+# skills should be illustrated and not written
+  
 [[skills]]
 category = "Self-Tought"
 concept = [
@@ -123,25 +65,14 @@ concept = [
   "Static Site Generation",
   "Machine learning"
 ]
-tech = [
-  "NServiceBus",
-  "RavenDB"
-]
-lang = [
-  "Golang",
-  "Erlang",
-  "R"
-]
+tech = ["NServiceBus","RavenDB"]
+lang = ["Golang","Erlang","R"]
 
 [[skills]]
 category = "Work"
 concept = [
-  "MicroServices",
-  "Vertical design",
-  "CQRS",
-  "Event Driven",
-  "Star Schema"
-]
+  "MicroServices","Vertical design",
+  "CQRS","Event Driven","Star Schema"]
 tech = [
   "ServiceStack",
   ".net core",
@@ -153,35 +84,89 @@ tech = [
   "Postman (+ tests)",
   "Resharper"
 ]
-lang = [
-  "Csharp",
-  "Javascript"
-]
+lang = ["Csharp","Javascript"]
 
 [[skills]]
 category = "School"
 concept = []
-tech = [
-  "AutoCAD (2D)",
-  "Robotran",
-  "ORCAD"
-]
-lang = [
-  "Java",
-  "Matlab",
-  "COBOL",
-  "Latex"
-]
+tech = ["AutoCAD (2D)","Robotran","ORCAD"]
+lang = ["Java","Matlab","COBOL","Latex"]
 
-[interests]
+# [path]
 
-  [interests.hobbies]
-  title = "Hobbies"
-  exc = "running, piano, gardening,     travelling, volunteering, reading (newspapers, magazines)"
+[experiences]
 
-  [interests.memberships]
-  title = "Memberships"
-  exc = "voluntary work with young people   (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
+  [experiences.2019_au]
+  date_range_name = "Feb 19 - now"
+  title = "Volunteer work in Australia"
+  duration_name = "18 months"
+  exc = "Farm hand on a cattle station in remote WA, milking sheep/cows in south WA, picking and processing olives to make oil in Tasmania,..."
+  org_name = "Workaway"
+  pin = false
+
+  [experiences.2016_ringring]
+  date_range_name = "March 16 - Dec 18"
+  title = "Software Developer"
+  duration_name = "< 3 years"
+  exc = "Automating communication solutions (sms, call, mail) from tailored short deadline projects (API, web, service) till platform creation (new mail platform). Make your code resilient, learn to prioritize and do API/DTO first development."
+  org_name = "The RingRing Company"
+  place_name = "Brussels"
+  pin = true
+
+  [experiences.2014_nz]
+  date_range_name = "Dec 14 - Dec 15"
+  title = "Volunteer work in New Zealand"
+  duration_name = "One year"
+  exc = "Twelve hosts welcomed me and my partner in their day-to-day life : conservation work, organic farming, small building projects, ..."
+  org_name = "WWOOF"
+  pin = false
+
+  [experiences.2013_inasti]
+  date_range_name = "Dec 13 - Dec 14"
+  title = "Application Developer"
+  duration_name = "One year"
+  exc = "Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework."
+  org_name = "CSC/INASTI"
+  place_name = "Brussels"
+  pin = false 
+
+  [experiences.2013_bewan]
+  date_range_name = "Feb 13 - May 13"
+  title = ".NET Developer"
+  duration_name = "Three months"
+  exc = "Analysing and implementing Bewan's new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
+  org_name = "Bewan"
+  place_name = "Waterloo"
+  sub = "internship"
+  pin = false
+
+  [experiences.2012_pmg]
+  date_range_name = "August 12"
+  title = "Developer"
+  duration_name = "One month"
+  exc = "Implementing tools to ease the work of the coordinator: personal data and labour input aggregation, bank transfer automation, salary calculation."
+  org_name = "PMG Luxembourg-Dinant"
+  place_name = "Bièvre (BE)"
+  sub = "student job"
+  pin = false
+
+[educations]
+
+  [educations.2011_informatics]
+  date_range_name = "2011-2013"
+  title = "Bachelor's Degree in Business   Computing"
+  org_name = "Hénallux"
+  place_name = "Namur"
+  pin = false
+
+  [educations.2008_engineer]
+  date_range_name = "2008-2011"
+  title = "B.S. in Engineering (mechanics and electronics)"
+  org_name = "UCL"
+  place_name = "Louvain-la-Neuve"
+  add = "graduated 1st year in 2009"
+  pin = false
+
 
 [achievements]
 
