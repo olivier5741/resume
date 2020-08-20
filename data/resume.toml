@@ -52,28 +52,24 @@ exc = "Driving licence"
   [interests.memberships]
   title = "Memberships"
   exc = "voluntary work with young people   (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
-
-# skills should be illustrated and not written
   
-[[skills]]
-category = "Self-Tought"
+[skills]
 concept = [
   "Domain Driven Design",
   "Agile",
   "NoSQL",
   "Event Sourcing",
   "Static Site Generation",
-  "Machine learning"
+  "Machine learning",
+  "MicroServices",
+  "Vertical design",
+  "CQRS",
+  "Event Driven",
+  "Star Schema"
 ]
-tech = ["NServiceBus","RavenDB"]
-lang = ["Golang","Erlang","R"]
-
-[[skills]]
-category = "Work"
-concept = [
-  "MicroServices","Vertical design",
-  "CQRS","Event Driven","Star Schema"]
 tech = [
+  "NServiceBus",
+  "RavenDB",
   "ServiceStack",
   ".net core",
   "RabbitMQ",
@@ -82,129 +78,148 @@ tech = [
   "MySQL",
   "Rider (IntelliJ)",
   "Postman (+ tests)",
-  "Resharper"
+  "Resharper",
+  "AutoCAD (2D)",
+  "Robotran",
+  "ORCAD"
 ]
-lang = ["Csharp","Javascript"]
+lang = [
+  "C#",
+  "Golang",
+  "Javascript",
+  "Java",
+  "Erlang",
+  "Matlab",
+  "Latex",
+  "R",
+  "COBOL"
+]
 
-[[skills]]
-category = "School"
-concept = []
-tech = ["AutoCAD (2D)","Robotran","ORCAD"]
-lang = ["Java","Matlab","COBOL","Latex"]
+[path]
 
-# [path]
-
-[experiences]
-
-  [experiences.2019_au]
+  [path.2019_au]
+  category = "experience"
+  type = "leg"
   date_range_name = "Feb 19 - now"
+  date = "2019-02"
   title = "Volunteer work in Australia"
   duration_name = "18 months"
   exc = "Farm hand on a cattle station in remote WA, milking sheep/cows in south WA, picking and processing olives to make oil in Tasmania,..."
   org_name = "Workaway"
-  pin = false
 
-  [experiences.2016_ringring]
+  [path.2016_ringring]
+  category = "experience"
+  type = "leg"
   date_range_name = "March 16 - Dec 18"
+  date = "2016-03"
   title = "Software Developer"
   duration_name = "< 3 years"
   exc = "Automating communication solutions (sms, call, mail) from tailored short deadline projects (API, web, service) till platform creation (new mail platform). Make your code resilient, learn to prioritize and do API/DTO first development."
-  org_name = "The RingRing Company"
+  org_name = "RingRing"
   place_name = "Brussels"
   pin = true
 
-  [experiences.2014_nz]
+  [path.2014_nz]
+  category = "experience"
+  type = "leg"
   date_range_name = "Dec 14 - Dec 15"
+  date = "2014-12"
   title = "Volunteer work in New Zealand"
   duration_name = "One year"
   exc = "Twelve hosts welcomed me and my partner in their day-to-day life : conservation work, organic farming, small building projects, ..."
   org_name = "WWOOF"
-  pin = false
 
-  [experiences.2013_inasti]
+  [path.2013_inasti]
+  category = "experience"
+  type = "leg"
   date_range_name = "Dec 13 - Dec 14"
+  date = "2013-12"
   title = "Application Developer"
   duration_name = "One year"
   exc = "Migration of a client-server application (web, COM+) to a new .NET platform 'Sequoia' (WPF, WCF, LLBLGen Pro) by keeping the existing Oracle database. Implementing new features to Sequoia such as a UI Framework."
   org_name = "CSC/INASTI"
   place_name = "Brussels"
-  pin = false 
 
-  [experiences.2013_bewan]
+  [path.2013_bewan]
+  category = "experience"
+  type = "leg"
   date_range_name = "Feb 13 - May 13"
+  date = "2013-02"
   title = ".NET Developer"
   duration_name = "Three months"
   exc = "Analysing and implementing Bewan's new ERP. Project started with Windows Workflow Foundation as main technology but it was dropped in favour of a more pragmatic solution including NServiceBus and RavenDB."
   org_name = "Bewan"
   place_name = "Waterloo"
-  sub = "internship"
-  pin = false
+  badges = ["internship"]
 
-  [experiences.2012_pmg]
+  [path.2012_pmg]
+  category = "experience"
+  type = "leg"
   date_range_name = "August 12"
+  date = "2012-08"
   title = "Developer"
   duration_name = "One month"
   exc = "Implementing tools to ease the work of the coordinator: personal data and labour input aggregation, bank transfer automation, salary calculation."
   org_name = "PMG Luxembourg-Dinant"
   place_name = "Bièvre (BE)"
-  sub = "student job"
-  pin = false
+  badges = ["student job"]
 
-[educations]
-
-  [educations.2011_informatics]
+  [path.2011_informatics]
+  category = "education"
+  type = "leg"
   date_range_name = "2011-2013"
+  date = "2011-09"
   title = "Bachelor's Degree in Business   Computing"
   org_name = "Hénallux"
   place_name = "Namur"
-  pin = false
 
-  [educations.2008_engineer]
+  [path.2008_engineer]
+  category = "education"
+  type = "leg"
   date_range_name = "2008-2011"
+  date = "2008-12"
   title = "B.S. in Engineering (mechanics and electronics)"
   org_name = "UCL"
   place_name = "Louvain-la-Neuve"
-  add = "graduated 1st year in 2009"
-  pin = false
+  note = "graduated 1st year in 2009"
 
-
-[achievements]
-
-  [achievements.electoral-gps]
-  name = "WeCitizens Electoral GPS"
-  exc = "Electoral GPS for belgian municipal election in 2018"
-  tech = [
-    "nodejs",
-    "vue"
-  ]
+  [path.mail_platform]
+  category = "project"
+  title = "Mail Platform"
+  org_name = "RingRing"
+  exc = "The mail platform was set up to send external and internal emails. Based on a choreography of five new microservices, it provides email sending, email templating, webhook notification and reporting."
+  tags = ["microservice","event driven","netcore","rabbitmq","servicestack","redis"]
+  url = "https://developers.ringring.be/#operation/Mail_Post"
+  pin = 1
+  
+  [path.electoral_gps]
+  category = "project"
+  title = "Electoral GPS"
+  org_name = "WeCitizens"
+  exc = "Electoral GPS for belgian municipal election in 2018."
+  tags = ["nodejs","vue"]
   src = "https://github.com/wecitizens/electoral-gps-frontend"
+  pin = 2
 
-  [achievements.travel-blog]
-  name = "Rokiwi Blog"
-  exc = "A private travel blog (New Zealand and Australia). French and English posts."
-  tech = [
-    "hugo"
-  ]
+  [path.travel-blog]
+  category = "project"
+  title = "Rokiwi Blog"
+  exc = "A travel blog about some exciting overseas adventures"
+  tags = ["hugo"]
   src = "https://github.com/rokiwi/rokiwi.github.io"
-link = "http://rokiwi.github.io/"
+  url = "http://rokiwi.github.io/"
 
-  [achievements.stock-manager]
-  name = "Stock Manager"
-  exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution. Multi-unit supported."
-  tech = [
-    "go",
-    "event sourcing"
-  ]
+  [path.stock-manager]
+  category = "project"
+  title = "Stock Manager"
+  exc = "Encode your stock input, output and inventory (csv files) and let *Stock Manager* generate your current stock state and the stock goods evolution."
+  tags = ["go","event sourcing","google spreadsheet"]
   src = "https://github.com/olivier5741/stock-manager"
 
-  [achievements.resume-generator]
-  name = "Resume generator"
+  [path.resume-generator]
+  category = "project"
+  title = "Online resume"
   exc = "Write your resume in a minimal language *(toml)*, serve it as a website *(hugo)*"
-  tech = [
-    "hugo",
-    "toml",
-    "bootstrap"
-  ]
+  tags = ["hugo","toml","bootstrap"]
   src = "https://github.com/olivier5741/resume"
-   link = "http://olivier5741.github.io/"
-
+  url = "http://olivier5741.github.io/"

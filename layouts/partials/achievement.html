@@ -1,25 +1,25 @@
  <h4>
 
-{{ .name }}
+{{ .title }}
 
-{{if .link}}
+{{if .url}}
 <a class="btn btn-light btn-sm d-print-none" href="{{ .link }}">
 <span class="octicon octicon-link"></span>
 </a>
 {{end}}
 
+{{if .src}}
 <a class="btn btn-light btn-sm d-print-none" href="{{ .src }}">
 <span class="octicon octicon-code"></span>
 </a>
-</h4> 
+</h4>
+{{end}}
 
 <h5>
-{{if .tech}}
-{{range .tech}}
-<span class="badge badge-primary">
-  {{.}}
-</span>
-{{end}} 
+{{range .tags}}
+  <span class="badge badge-primary">
+    {{.}}
+  </span>
 {{end}}
 </h5>
 
