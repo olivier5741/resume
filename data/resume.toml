@@ -14,6 +14,14 @@ tags = [
   "best principles"
 ]
 
+[badges]
+
+[badges.coding]
+title = "since 2008"
+
+[badges.experience]
+title = "4 years experience"
+
 [contact]
 phone_number = "+61 448/369.125"
 email = "olivier5741@gmail.com"
@@ -25,6 +33,24 @@ site_url = "olivier5741.github.io/resume"
 
 [transport]
 exc = "Driving licence"
+
+[social_skills]
+
+  [social_skills.adaptability]
+  title="Adaptability"
+  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+
+  [social_skills.team_player]
+  title="Team player"
+exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+
+  [social_skills.conceptual]
+  title="Conceptual"
+  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+
+  [social_skills.creativity]
+  title="Creativity"
+  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
 
 [languages]
 
@@ -53,8 +79,8 @@ exc = "Driving licence"
   title = "Memberships"
   exc = "voluntary work with young people   (Patro - 4 years of experience [2 years as treasurer]), member of the village youth club"
   
-[skills]
-concept = [
+[technical_skills]
+concepts = [
   "Domain Driven Design",
   "Agile",
   "NoSQL",
@@ -67,7 +93,7 @@ concept = [
   "Event Driven",
   "Star Schema"
 ]
-tech = [
+techs = [
   "NServiceBus",
   "RavenDB",
   "ServiceStack",
@@ -83,7 +109,7 @@ tech = [
   "Robotran",
   "ORCAD"
 ]
-lang = [
+langs = [
   "C#",
   "Golang",
   "Javascript",
@@ -197,7 +223,7 @@ lang = [
   title = "Electoral GPS"
   org_name = "WeCitizens"
   exc = "Electoral GPS for belgian municipal election in 2018."
-  tags = ["nodejs","vue"]
+  tags = ["open source","nodejs","vue"]
   src = "https://github.com/wecitizens/electoral-gps-frontend"
   pin = 2
 

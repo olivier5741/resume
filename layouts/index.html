@@ -16,15 +16,15 @@
 
 <nav class="navbar navbar-light bg-light d-print-none">
   <div class="btn-group d-sm-none">
-    <a class="btn btn-light" href="tel:{{$r.contact.phone_number}}">
+    <a class="btn btn-light pl-0 pr-1" href="tel:{{$r.contact.phone_number}}">
       <span class="mega-octicon octicon-device-mobile"></span>
     </a>
     
-    <a class="btn btn-light" href="mailto:{{$r.contact.email}}">
+    <a class="btn btn-light pr-1" href="mailto:{{$r.contact.email}}">
       <span class="mega-octicon octicon-mail"></span>
     </a>
     
-    <a class="btn btn-light" href="{{$r.social.github_url}}">
+    <a class="btn btn-light p-2" href="{{$r.social.github_url}}">
       <span class="mega-octicon octicon-octoface"></span>
     </a>
   </div>
@@ -52,18 +52,37 @@
   </article>
 
   
-  <article>
+<article>
      
+     <div class="float-right">
+     <div>
      {{range $r.languages}}
-        <span class="d-sm-none badge badge-light float-right">
+        <span class="d-sm-none badge badge-light">
          {{.title_short}}
         </span>
-     {{end}} 
+     {{end}}
+     </div>
+     
+     </div>
+     
     <h1>
       {{$r.name}}
     </h1>
     
-    <div class="h2">{{$r.job}}</div>
+    <div class="h2">
+      {{$r.job}}
+      <h5>
+        <div class="badge badge-light">  
+        {{$r.badges.experience.title}}
+      </div>
+    
+    <div class="badge badge-light">
+      <span class="octicon octicon-code"></span>  
+      {{$r.badges.coding.title}}
+    </div>
+    </h5>
+    </div>
+    
     <p  class="lead">
       {{$r.exc | markdownify}}   
     </p>
@@ -78,6 +97,22 @@
 
 <hr/>
 
+<article>
+  <header>
+    <h2>Skills</h2>
+  </header>
+  <div class="row">
+    
+    {{range $r.social_skills}}
+    <div class="col-md-6">
+      {{ partial "achievement.html" . }}
+    </div>
+    {{end}}
+  </div>
+</article>
+
+<hr/>
+
 <div class="row">
 
 {{ $path := slice }} 
@@ -85,7 +120,9 @@
   {{ $path = $path | append . }}
 {{ end }}
 
-<article class="col-md-7">
+<div class="col-md-6 col-lg-7">
+
+<article>
   <header>
     <h2>Projects</h2>
   </header>
@@ -101,7 +138,25 @@
 
 <hr/>
 
-<article class="col-md-5">
+<article>
+  <header>
+    <h2>Languages</h2>
+  </header>
+  <div class="d-flex flex-wrap flex-row">
+    {{range $r.languages}}
+    <div class="pr-2 mr-auto">
+      <h4>{{.title}}</h4>
+      <span>{{.level}}</span>
+    </div>
+    {{end}}
+  </div>
+</article>
+
+<hr/>
+
+</div>
+
+<article class="col-md-6 col-lg-5">
   <header>
     <h2>Timeline</h2>
   </header> 
