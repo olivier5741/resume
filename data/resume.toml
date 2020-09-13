@@ -1,7 +1,7 @@
 name = "Olivier Wouters"
 job = "Software Developer"
 
-exc = "The digital world is pulling the strings. Committed to good design and creativity, can you branch nowadays issues? <br/> Let's merge our efforts and push something [really] useful to the world.\n"
+exc = "The digital world is pulling the strings. Committed to *good design* and *creativity*, can you branch nowadays issues? Let's merge our efforts and push something [really] useful to the world.\n"
 
 tags = [
   "c#",
@@ -13,6 +13,8 @@ tags = [
   "event driven",
   "best principles"
 ]
+
+pins = ["microservices", "go"]
 
 [badges]
 
@@ -214,7 +216,8 @@ langs = [
   title = "Mail Platform"
   org_name = "RingRing"
   exc = "The mail platform was set up to send external and internal emails. Based on a choreography of five new microservices, it provides email sending, email templating, webhook notification and reporting."
-  tags = ["microservice","event driven","netcore","rabbitmq","servicestack","redis"]
+  tags = ["microservice","cqrs","netcore","rabbitmq","servicestack","redis"]
+  pins = ["cqrs", "netcore", "rabbitmq"]
   url = "https://developers.ringring.be/#operation/Mail_Post"
   pin = 1
   
@@ -224,6 +227,7 @@ langs = [
   org_name = "WeCitizens"
   exc = "Electoral GPS for belgian municipal election in 2018."
   tags = ["open source","nodejs","vue"]
+  pins = ["open source"]
   src = "https://github.com/wecitizens/electoral-gps-frontend"
   pin = 2
 

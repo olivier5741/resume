@@ -38,21 +38,25 @@
 
 
 <div class="container mt-3">
+
+  <header class="main-header">
   
   <article class="float-right d-none d-md-block d-print-block">
     <address>
-      <span class="octicon octicon-device-mobile"></span>{{$r.contact.phone_number}}<br>
+      <span class="octicon octicon-device-mobile"></span>
+      <span class="p-1">{{$r.contact.phone_number}}</span>
+      <br>
       <span class="octicon octicon-mail"></span>
-      <a href="mailto:{{$r.contact.email}}">{{$r.contact.email}}
+      <a class="p-1" href="mailto:{{$r.contact.email}}">      {{$r.contact.email}}
       <a><br>
       <span class="octicon   octicon-octoface"></span>
-      <a href="{{$r.social.github_url}}">{{$r.social.github_name}}</a><br>
-      <span class="octicon octicon-rocket "></span>{{$r.transport.exc}}<br> 
+      <a class="p-1" href="{{$r.social.github_url}}">      {{$r.social.github_name}}</a><br>
+      <span class="octicon octicon-rocket "></span>      <span class="p-1">{{$r.transport.exc}}</span><br> 
     <address>
   </article>
 
   
-<article>
+<article style="max-width:700px">
      
      <div class="float-right">
      <div>
@@ -71,8 +75,8 @@
     
     <div class="h2">
       {{$r.job}}
-      <h5>
-        <div class="badge badge-light">  
+      <h5 class="p-1">
+        <div class="badge badge-primary">  
         {{$r.badges.experience.title}}
       </div>
     
@@ -86,16 +90,27 @@
     <p  class="lead">
       {{$r.exc | markdownify}}   
     </p>
-    <h4 class="tags">
+    
+    <h4 class="">
       {{range $r.tags}}
+      
+        {{if in $r.pins .}}
         <span class="badge badge-primary">
          {{.}}
         </span>
+        {{else}}
+        <span class="badge badge-light">
+         {{.}}
+        </span>
+        {{end}}
+      
       {{end}}
     </h4>
 </article>
 
 <hr/>
+
+</header>
 
 <article>
   <header>
@@ -172,7 +187,7 @@
       <div class="d-flex">
         <div class="w-50">
           {{if .duration_name}}
-          <span class="badge badge-primary">
+          <span class="badge badge-light">
             {{.duration_name}}
           </span>
           {{end}}

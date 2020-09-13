@@ -1,4 +1,6 @@
  <h4>
+ 
+{{ $a := . }}
 
 {{ .title }}
 
@@ -17,9 +19,17 @@
 
 <h5>
 {{range .tags}}
+
+  {{if in $a.pins .}}
   <span class="badge badge-primary">
     {{.}}
   </span>
+  {{else}}
+  <span class="badge badge-light">
+    {{.}}
+  </span>
+  {{end}}
+
 {{end}}
 </h5>
 

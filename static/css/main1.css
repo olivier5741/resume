@@ -2,10 +2,40 @@ h2 {
   color: #7BBF6A;
 }
 
+em {
+  font-weight: bold;
+}
+
+
 .btn-primary, .badge-primary {
-  background-color: #7BBF6A;
+  color: #3d7130;
+  background-color: #cde7c7;
 }
 
 .btn-primary {
-  border-color: #7BBF6A;
+  border-color: #7BBF6A !important;
+}
+
+@media print 
+{  
+    body {
+        padding-top:15mm;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    hr {
+      margin-bottom:5mm;
+      margin-top:5mm;
+    }
+    
+    h2 {
+      margin-bottom:5mm;
+    }
+    
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+      outline: none;
+    }
 }
