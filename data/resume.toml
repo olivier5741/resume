@@ -1,7 +1,7 @@
 name = "Olivier Wouters"
 job = "Software Developer"
 
-exc = "The digital world is pulling the strings. Committed to *good design* and *creativity*, can you branch nowadays issues? Let's merge our efforts and push something [really] useful to the world.\n"
+exc = "The digital world is pulling the strings. Committed to *good design* and *creativity*, can you branch nowadays issues? Let's merge our efforts and push something [really] *useful to the world*.\n"
 
 tags = [
   "c#",
@@ -40,19 +40,19 @@ exc = "Driving licence"
 
   [social_skills.adaptability]
   title="Adaptability"
-  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+  exc="*Embrace change* and keep on *learning*. I value the concepts, languages and tools I used so far but I value the team and business more. So I'm *open minded* about any opportunity."
 
   [social_skills.team_player]
   title="Team player"
-exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+exc="*Interaction* is the key : shaping and building together a solution, *exchanging* experiences, *sharing* knowledge and *debating*. Something I praticed too late and didn't do enough : pair programming."
 
   [social_skills.conceptual]
   title="Conceptual"
-  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+  exc="You can't beat working code but it will be reasoned about, grow and someone[else] will build around. Therefore it's important that the *interface* is *future-proof* and the *business* needs are *cleary expressed* in code (*Domain Driven Design* is part of my toolbox)."
 
   [social_skills.creativity]
   title="Creativity"
-  exc="Sed at elit ac lorem varius mattis at tincidunt risus. Nunc laoreet leo ante, sodales maximus lacus condimentum et. Fusce sapien sapien, tincidunt non feugiat id, iaculis at leo."
+  exc="*Team-wide standards*, *good practice* and a business story : there is *so much room left for creativity*. I love to express it from naming a variable to designing a multi microservices platform."
 
 [languages]
 
@@ -216,8 +216,8 @@ langs = [
   title = "Mail Platform"
   org_name = "RingRing"
   exc = "The mail platform was set up to send external and internal emails. Based on a choreography of five new microservices, it provides email sending, email templating, webhook notification and reporting."
-  tags = ["microservice","cqrs","netcore","rabbitmq","servicestack","redis"]
-  pins = ["cqrs", "netcore", "rabbitmq"]
+  tags = ["api first", "microservice","cqrs","netcore","rabbitmq","servicestack","redis"]
+  pins = ["api first","cqrs", "netcore", "rabbitmq"]
   url = "https://developers.ringring.be/#operation/Mail_Post"
   pin = 1
   

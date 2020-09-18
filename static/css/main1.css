@@ -7,13 +7,14 @@ em {
 }
 
 
-.btn-primary, .badge-primary {
+.badge-primary {
   color: #3d7130;
   background-color: #cde7c7;
 }
 
 .btn-primary {
-  border-color: #7BBF6A !important;
+  background-color: #7BBF6A;
+  border-color: #7BBF6A;
 }
 
 @media print 
