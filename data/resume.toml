@@ -218,7 +218,7 @@ langs = [
   exc = "The mail platform was set up to send external and internal emails. Based on a choreography of five new microservices, it provides email sending, email templating, webhook notification and reporting."
   tags = ["api first", "microservice","cqrs","netcore","rabbitmq","servicestack","redis"]
   pins = ["api first","cqrs", "netcore", "rabbitmq"]
-  url = "https://developers.ringring.be/#operation/Mail_Post"
+  url = "https://developers.ringring.be/#tag/Mail"
   pin = 1
   
   [path.electoral_gps]
