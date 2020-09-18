@@ -1,7 +1,7 @@
 name = "Olivier Wouters"
 job = "Software Developer"
 
-exc = "The digital world is pulling the strings. Committed to *good design* and *creativity*, can you branch nowadays issues? Let's merge our efforts and push something [really] *useful to the world*.\n"
+exc = "The digital world is pulling the strings. Committed to *good design* and *creativity*, can you branch nowadays issues? Let's merge our efforts and push something [really] *useful to the world*."
 
 tags = [
   "c#",
