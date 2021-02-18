@@ -14,7 +14,7 @@ tags = [
   "best principles"
 ]
 
-pins = ["microservices", "go"]
+pins = ["microservices", "go","c#"]
 
 [badges]
 
