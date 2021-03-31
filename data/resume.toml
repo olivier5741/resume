@@ -220,7 +220,6 @@ langs = [
   pins = ["opendata","graphql"]
   url = "https://kangouroute.netlify.app/"
   src = "https://github.com/keep-it-cool/kangouroute"
-  pin = 3
   
   [path.patient_follow_up]
   category = "project"
@@ -230,7 +229,6 @@ langs = [
   pins = ["javascript"]
   url = "https://docs.google.com/spreadsheets/d/1gLKt9QdUTm8rfAfmakQrcFn3-iwV48R8FAn3bHEzM2I"
   src = "https://github.com/olivier5741/patientfollowup"
-  pin = 4
 
   [path.mail_platform]
   category = "project"
