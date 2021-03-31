@@ -14,7 +14,7 @@ tags = [
   "best principles"
 ]
 
-pins = ["microservices", "go"]
+pins = ["microservices", "go","c#"]
 
 [badges]
 
@@ -25,7 +25,7 @@ title = "since 2008"
 title = "4 years experience"
 
 [contact]
-phone_number = "+61 448/369.125"
+phone_number = "+32 476/28.32.71"
 email = "olivier5741@gmail.com"
 
 [social]
@@ -210,6 +210,25 @@ langs = [
   org_name = "UCL"
   place_name = "Louvain-la-Neuve"
   note = "graduated 1st year in 2009"
+  
+  [path.kangouroute]
+  category = "project"
+  title = "Kangouroute"
+  org_name = "Hackathon Ouvrir ma ville"
+  exc = "Hackathon project to reduce traffic around schools for the city of Liège"
+  tags = ["opendata","graphql","angular"]
+  pins = ["opendata","graphql"]
+  url = "https://kangouroute.netlify.app/"
+  src = "https://github.com/keep-it-cool/kangouroute"
+  
+  [path.patient_follow_up]
+  category = "project"
+  title = "Patient follow up"
+  exc = "Follow up covid patients in aged care facilities"
+  tags = ["google sheets", "javascript"]
+  pins = ["javascript"]
+  url = "https://docs.google.com/spreadsheets/d/1gLKt9QdUTm8rfAfmakQrcFn3-iwV48R8FAn3bHEzM2I"
+  src = "https://github.com/olivier5741/patientfollowup"
 
   [path.mail_platform]
   category = "project"
