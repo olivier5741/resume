@@ -22,7 +22,7 @@ pins = ["microservices", "go","c#"]
 title = "since 2008"
 
 [badges.experience]
-title = "4 years experience"
+title = "5 years experience"
 
 [contact]
 phone_number = "+32 476/28.32.71"
@@ -125,10 +125,20 @@ langs = [
 
 [path]
 
+  [path.2023_ulb]
+  category = "experience"
+  type = "leg"
+  date_range_name = "Sep 21 - now"
+  date = "2021-09"
+  title = "Software developer"
+  duration_name = "1.5 year"
+  exc = "Build logCiCa platform (logistics platform for short food systems)"
+  org_name = "ULB"
+
   [path.2019_au]
   category = "experience"
   type = "leg"
-  date_range_name = "Feb 19 - now"
+  date_range_name = "Feb 19 - Jan 21"
   date = "2019-02"
   title = "Volunteer work in Australia"
   duration_name = "18 months"
@@ -206,7 +216,7 @@ langs = [
   type = "leg"
   date_range_name = "2008-2011"
   date = "2008-12"
-  title = "B.S. in Engineering (mechanics and electronics)"
+  title = "B.S. in Engineering"
   org_name = "UCL"
   place_name = "Louvain-la-Neuve"
   note = "graduated 1st year in 2009"
@@ -272,3 +282,4 @@ langs = [
   tags = ["hugo","toml","bootstrap"]
   src = "https://github.com/olivier5741/resume"
   url = "http://olivier5741.github.io/"
+  
